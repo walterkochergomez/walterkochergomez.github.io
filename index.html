@@ -216,11 +216,12 @@
         <section id="contacto">
             <h3>Contacto</h3>
             <div class="contact-form">
-                <form id="contactForm">
+                <form id="contactForm" action="https://formspree.io/f/xvzwydbq" method="POST">
                     <input type="text" id="name" name="name" placeholder="Tu nombre" required>
                     <input type="email" id="email" name="email" placeholder="Tu email" required>
                     <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
                     <button type="submit">Enviar Mensaje</button>
+                    <p id="form-status" style="display:none; text-align:center; margin-top:10px; color:var(--accent-color);"></p>
                 </form>
             </div>
         </section>
