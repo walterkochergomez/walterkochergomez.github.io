@@ -44,7 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -90,10 +90,42 @@ body {
     width: 100%;
 }
 
+/* Estilos para el selector de idiomas */
+.lang-switcher {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    background-color: rgba(44, 74, 82, 0.1);
+    color: var(--accent-color);
+}
+
+.lang-btn.active {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-color: var(--accent-color);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .hamburger span {
@@ -214,7 +246,6 @@ h3::after {
     border-radius: 2px;
 }
 
-/* AQUÍ ESTÁ LA CORRECCIÓN: Ahora solo oculta el párrafo de "Sobre Mí" al inicio */
 #sobre-mi p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .contact-form form {
     opacity: 0;
 }
@@ -570,4 +601,8 @@ footer {
     .lang-item { flex-direction: column; align-items: flex-start; gap: 5px; }
     .lang-bar-bg { margin: 5px 0; width: 100%; }
     .lang-level { text-align: left; }
+    .lang-switcher {
+        margin: 10px 0 0 0;
+        justify-content: center;
+    }
 }
