@@ -62,23 +62,36 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Formulario de Contacto Funcional con correo en blanco
+// Formulario de Contacto Funcional con Formspree (Sin recargar la página)
 const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('form-status');
+
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Evitamos que la página recargue
         
-        // Verificamos que al menos el nombre y correo estén (el mensaje ya es requerido en el HTML)
-        if (name && email) {
-            const subject = `Contacto desde Portafolio - ${name}`;
+        const data = new FormData(contactForm);
+        
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
             
-            // Redirigimos al correo SOLO con el asunto, dejando el cuerpo en blanco
-            window.location.href = `mailto:w.kocher.gomez@gmail.com?subject=${encodeURIComponent(subject)}`;
-            
-            // Limpiamos el formulario en la web
-            contactForm.reset();
+            if (response.ok) {
+                formStatus.textContent = "¡Mensaje enviado con éxito! Te contactaré pronto.";
+                formStatus.style.display = "block";
+                contactForm.reset();
+            } else {
+                formStatus.textContent = "Hubo un problema al enviar el mensaje. Intenta de nuevo.";
+                formStatus.style.display = "block";
+            }
+        } catch (error) {
+            formStatus.textContent = "Error de conexión. Revisa tu internet.";
+            formStatus.style.display = "block";
         }
     });
 }
