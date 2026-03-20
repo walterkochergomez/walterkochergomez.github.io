@@ -214,7 +214,8 @@ h3::after {
     border-radius: 2px;
 }
 
-p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .contact-form form {
+/* AQUÍ ESTÁ LA CORRECCIÓN: Ahora solo oculta el párrafo de "Sobre Mí" al inicio */
+#sobre-mi p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .contact-form form {
     opacity: 0;
 }
 
