@@ -62,19 +62,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Formulario de Contacto Funcional
+// Formulario de Contacto Funcional con correo en blanco
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
         
-        if (name && email && message) {
+        // Verificamos que al menos el nombre y correo estén (el mensaje ya es requerido en el HTML)
+        if (name && email) {
             const subject = `Contacto desde Portafolio - ${name}`;
-            const body = `Nombre: ${name}%0D%0ACorreo: ${email}%0D%0A%0D%0AMensaje:%0D%0A${message}`;
-            window.location.href = `mailto:w.kocher.gomez@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Redirigimos al correo SOLO con el asunto, dejando el cuerpo en blanco
+            window.location.href = `mailto:w.kocher.gomez@gmail.com?subject=${encodeURIComponent(subject)}`;
+            
+            // Limpiamos el formulario en la web
             contactForm.reset();
         }
     });
