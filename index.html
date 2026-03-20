@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Jürgen Köcher Gómez - Portafolio Interactivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">WK</div>
+            <ul class="nav-menu">
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#formacion" class="nav-link">Formación</a></li>
+                <li><a href="#otras-experiencias" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="header">
+        <div class="profile-img-container">
+            <img src="foto.jpg" alt="Walter Jürgen Köcher Gómez" class="profile-img">
+        </div>
+        <div class="header-info">
+            <h1>WALTER JÜRGEN<br>KÖCHER GÓMEZ</h1>
+            <h2>ESTUDIANTE DE INGENIERÍA CIVIL INDUSTRIAL</h2>
+            <div class="contact-badges">
+                <span class="contact-badge"><i class="fas fa-phone"></i> +56988239680</span>
+                <span class="contact-badge"><i class="fas fa-envelope"></i> w.kocher.gomez@gmail.com</span>
+                <span class="contact-badge"><i class="fas fa-map-marker-alt"></i> Los productores 010182, Temuco</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="sobre-mi">
+            <h3>Sobre Mí</h3>
+            <p>Comprometido y responsable, gran sentido de probidad, con habilidades para trabajar en grupo, con entusiasmo de trabajar en diferentes áreas, aprendizaje rápido y adaptable a diferentes adversidades.</p>
+            <a href="curriculum_walter_kocher.pdf" download class="download-btn">
+                <i class="fas fa-download"></i> Descargar CV en PDF
+            </a>
+        </section>
+
+        <section id="experiencia">
+            <h3>Experiencia Laboral</h3>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">Universidad de La Frontera</span>
+                        <span class="timeline-date">Agosto 2024 - Actual</span>
+                    </div>
+                    <div class="timeline-role">Ayudante de Investigación y Operaciones</div>
+                    <ul>
+                        <li>Desarrollo de Talleres y realización de clases practicas</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">Universidad de La Frontera</span>
+                        <span class="timeline-date">Agosto 2023 - Julio 2024</span>
+                    </div>
+                    <div class="timeline-role">Ayudante de Termodinámica</div>
+                    <ul>
+                        <li>Desarrollo de material complementario</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">CO-AX Válvulas S.L. Madrid</span>
+                        <span class="timeline-date">Dic 2024 - Mar 2025</span>
+                    </div>
+                    <div class="timeline-role">Práctica de estudios</div>
+                    <ul>
+                        <li>Implementación de un banco de pruebas.</li>
+                        <li>Desarrollo de laboratorio de electrónica.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">CO-AX Válvulas S.L. Madrid</span>
+                        <span class="timeline-date">Ene 2024 - Mar 2024</span>
+                    </div>
+                    <div class="timeline-role">Práctica de estudios</div>
+                    <ul>
+                        <li>Desarrollo de un banco de pruebas.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">m-tech gmbh. Alemania</span>
+                        <span class="timeline-date">Ene 2023 - Mar 2023</span>
+                    </div>
+                    <div class="timeline-role">Práctica de estudios</div>
+                    <ul>
+                        <li>Programación PLC de sistema semi-automático de llenado de gases.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-comments"></i>
+                    <span>Comunicación</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-users"></i>
+                    <span>Trabajo en equipo</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-microchip"></i>
+                    <span>Automatización y PLC</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Programación (Java, Python)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cube"></i>
+                    <span>Diseño 3D (Catia, SolidWorks)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Análisis de Datos</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="idiomas">
+            <h3>Idiomas</h3>
+            <div class="languages">
+                <div class="lang-item">
+                    <div class="lang-name">Alemán</div>
+                    <div class="lang-bar-bg"><div class="lang-bar-fill" data-width="85%"></div></div>
+                    <div class="lang-level">Nivel Alto</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name">Inglés</div>
+                    <div class="lang-bar-bg"><div class="lang-bar-fill" data-width="50%"></div></div>
+                    <div class="lang-level">Nivel Medio</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion">
+            <h3>Datos Académicos</h3>
+            <div class="academic-grid">
+                <div class="academic-item">
+                    <strong>Universidad de La Frontera</strong>
+                    <span>Ingeniería Civil Industrial</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Sprachschule AKTIV</strong>
+                    <span>Sprachkurs</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Goethe-Institut</strong>
+                    <span>TEILNAHMEBESTÄTIGUNG</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Liceo Camilo Henríquez</strong>
+                    <span>Enseñanza media</span>
+                </div>
+                <div class="academic-item">
+                    <strong>INFORCAP LIMITADA</strong>
+                    <span>Full stack java trainee</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="otras-experiencias">
+            <h3>Otras Experiencias</h3>
+            <div class="other-exp-grid">
+                <div class="other-exp-card">
+                    <h4>CIG 2024</h4>
+                    <p>Congreso Ingeniería Global 2024. Participación en taller de optimización de rutas de despacho para vehículos de reparto.</p>
+                </div>
+                <div class="other-exp-card">
+                    <h4>CLEIN 2023</h4>
+                    <p>Participación en Congreso Latinoamericano de Estudiantes e Ingenieros Industriales y Afines.</p>
+                </div>
+                <div class="other-exp-card">
+                    <h4>Lean Six Sigma</h4>
+                    <p>Participación en taller de Lean Six Sigma White Belt y Lean Six Sigma Yellow Belt.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Walter Jürgen Köcher Gómez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
