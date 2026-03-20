@@ -253,7 +253,7 @@ h3::after {
 /* Sobre Mí */
 #sobre-mi p {
     font-size: 1.1rem;
-    text-align: center;
+    text-align: justify;
     max-width: 800px;
     margin: 0 auto 30px auto;
     line-height: 1.6;
