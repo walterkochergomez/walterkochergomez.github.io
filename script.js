@@ -259,7 +259,7 @@ const translations = {
         
         "ufro_inv_title": "Wissenschaftliche Hilfskraft: Forschung & Betrieb",
         "ufro_inv_subtitle": "Unterstützung bei Forschung und Workshops",
-        "ufro_inv_detail_text": "Unterstützung bei Forschungsprojekten und Durchführung von praktischen Workshops. Entwicklung von Lehrmaterialien und Analyse von Betriebsdaten zur kontinuierlichen Verbesserung akademischer Prozesse.",
+        "ufro_inv_detail_text": "Um es in eine geschäftliche Perspektive zu rücken: Operations Research ist der analytische Motor, der es der Industrie ermöglicht, Kosten zu minimieren, Ressourcen zu optimieren und strategische Entscheidungen für das Management komplexer Systeme zu treffen. Als Tutor für den praktischen Teil dieses Kurses war es mein Ziel, diese analytische Fähigkeit mit der operativen Realität zu verbinden. Ich war verantwortlich für die Konzeption und Bewertung angewandter Fallstudien und leitete die Studierenden an, industrielle Probleme – wie die Optimierung von Transportrouten oder die Verbesserung von Produktionsprozessen – in mathematische Modelle zu übersetzen. Durch die Anleitung in fortschrittlicher Optimierungssoftware wie LINGO, AMPL/CPlex und Gurobi habe ich die Lösung dieser Herausforderungen geführt. Diese Erfahrung hat es mir nicht nur ermöglicht, Teams zu bilden, sondern auch meine eigene Fähigkeit gefestigt, Daten in konkrete Lösungen umzuwandeln, die die Effektivität und Effizienz in Organisationen vorantreiben.",
         
         "ufro_termo_title": "Tutor: Thermodynamik",
         "ufro_termo_subtitle": "Entwicklung von Lehrmaterialien",
@@ -336,7 +336,7 @@ const translations = {
         
         "ufro_inv_title": "Assistant: Research and Operations",
         "ufro_inv_subtitle": "Research support and workshop development",
-        "ufro_inv_detail_text": "Ongoing support in research projects and execution of practical workshops. Development of teaching materials and operational data analysis for the continuous improvement of academic processes.",
+        "ufro_inv_detail_text": "To put it into a business perspective: Operations Research is the analytical engine that allows industries to minimize costs, optimize resources, and make strategic decisions for the management of complex systems. As a Teaching Assistant for the practical section of this course, my goal was to connect this analytical capability with operational reality. I was responsible for the design and evaluation of applied case studies, guiding students in translating industrial problems—such as transport route optimization or the improvement of production processes—into mathematical models. Through instruction in advanced optimization software like LINGO, AMPL/CPlex, and Gurobi, I led the resolution of these challenges. This experience not only allowed me to build and guide teams but also consolidated my own ability to transform data into concrete solutions that drive effectiveness and efficiency in organizations.",
         
         "ufro_termo_title": "Teaching Assistant: Thermodynamics",
         "ufro_termo_subtitle": "Development of supplementary materials",
