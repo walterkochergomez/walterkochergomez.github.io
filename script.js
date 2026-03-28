@@ -24,7 +24,7 @@ const fadeInObserver = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.1 });
 
 // Seleccionar elementos para animar
-document.querySelectorAll('h3, #sobre-mi p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .contact-form form').forEach(el => {
+document.querySelectorAll('h3, #sobre-mi p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .contact-form form, .detail-section').forEach(el => {
     fadeInObserver.observe(el);
 });
 
@@ -162,7 +162,14 @@ const translations = {
         "contact_msg_ph": "Tu mensaje",
         "contact_btn": "Enviar Mensaje",
         "footer_rights": "Todos los derechos reservados.",
-        "btn_more_info": "Más información"
+        "btn_more_info": "Más información",
+        
+        // --- TEXTOS PARA PÁGINAS DE DETALLE ---
+        "nav_back": "Volver al Portafolio",
+        "coax_title": "Práctica: CO-AX Válvulas S.L.",
+        "coax_subtitle": "Implementación de banco de pruebas y laboratorio",
+        "coax_detail_text": "Durante mi estancia en CO-AX Válvulas, lideré la implementación de un banco de pruebas para certificar la calidad de las válvulas. Además, estructuré un laboratorio de electrónica aplicando normativas internacionales en un entorno de alta exigencia.",
+        "gallery_title": "Galería de Proyectos"
     },
     de: {
         "nav_about": "Über mich",
@@ -215,7 +222,14 @@ const translations = {
         "contact_msg_ph": "Ihre Nachricht",
         "contact_btn": "Nachricht senden",
         "footer_rights": "Alle Rechte vorbehalten.",
-        "btn_more_info": "Weitere Informationen"
+        "btn_more_info": "Weitere Informationen",
+        
+        // --- TEXTOS PARA PÁGINAS DE DETALLE ---
+        "nav_back": "Zurück zum Portfolio",
+        "coax_title": "Praktikum: CO-AX Válvulas S.L.",
+        "coax_subtitle": "Implementierung eines Prüfstands und Elektroniklabors",
+        "coax_detail_text": "Während meiner Zeit bei CO-AX Válvulas leitete ich die Implementierung eines Prüfstands zur Qualitätszertifizierung von Ventilen. Darüber hinaus strukturierte ich ein Elektroniklabor unter Anwendung internationaler Standards in einem anspruchsvollen Umfeld.",
+        "gallery_title": "Projektgalerie"
     },
     en: {
         "nav_about": "About Me",
@@ -268,7 +282,14 @@ const translations = {
         "contact_msg_ph": "Your message",
         "contact_btn": "Send Message",
         "footer_rights": "All rights reserved.",
-        "btn_more_info": "More information"
+        "btn_more_info": "More information",
+        
+        // --- TEXTOS PARA PÁGINAS DE DETALLE ---
+        "nav_back": "Back to Portfolio",
+        "coax_title": "Internship: CO-AX Válvulas S.L.",
+        "coax_subtitle": "Test bench and electronics laboratory implementation",
+        "coax_detail_text": "During my time at CO-AX Válvulas, I led the implementation of a test bench to certify valve quality. In addition, I structured an electronics laboratory applying international standards in a highly demanding environment.",
+        "gallery_title": "Project Gallery"
     }
 };
 
@@ -310,7 +331,12 @@ function changeLanguage(lang) {
 
     // 4. Actualizar la clase "active" en los botones
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    document.getElementById('btn-' + lang).classList.add('active');
+    
+    // Solo intentar añadir la clase si el botón existe en la página actual
+    const currentBtn = document.getElementById('btn-' + lang);
+    if(currentBtn) {
+        currentBtn.classList.add('active');
+    }
 
     // 5. Guardar preferencia en el navegador
     localStorage.setItem('preferredLanguage', lang);
