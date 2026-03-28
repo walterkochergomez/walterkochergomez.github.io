@@ -203,11 +203,11 @@ const translations = {
         "ufro_termo_subtitle": "Desarrollo de material complementario",
         "ufro_termo_detail_text": "Para ponerlo en perspectiva empresarial: la Termodinámica es el pilar fundamental para la eficiencia energética y la optimización de costos en cualquier proceso industrial que involucre transferencia de calor o energía. Como Ayudante de la sección práctica de esta asignatura, mi objetivo fue aterrizar estos principios teóricos a la realidad operativa. Fui responsable de guiar y evaluar a los estudiantes en el análisis de casos de estudio y experiencias de laboratorio, donde aplicaron balances de materia y energía para optimizar sistemas termodinámicos y procesos productivos. Lideré actividades enfocadas en evaluar la factibilidad técnica de estas mejoras mediante el uso de herramientas científico-tecnológicas y de gestión de proyectos. Esta experiencia no solo fortaleció mi capacidad para dirigir equipos técnicos, sino que consolidó mi habilidad para traducir leyes físicas complejas en propuestas de mejora continua, eficiencia y sustentabilidad para la industria.",
         
-        "coax_ene_title": "Práctica: CO-AX Válvulas S.L. (Ene-Mar 2024)",
+        "coax_ene_title": "Práctica: CO-AX Válvulas S.L.",
         "coax_ene_subtitle": "Desarrollo de banco de pruebas",
         "coax_ene_detail_text": "Diseño y desarrollo inicial de un banco de pruebas para válvulas. Realicé documentación técnica detallada y análisis de errores enfocados en la optimización de procesos industriales.",
         
-        "mtech_title": "Práctica: m-tech gmbh (Alemania)",
+        "mtech_title": "Práctica: m-tech gmbh",
         "mtech_subtitle": "Programación PLC y Automatización",
         "mtech_detail_text": "Programación de PLC (SPS) para un sistema semiautomático de llenado de gases. Esta experiencia me permitió aplicar directamente el idioma alemán en un entorno técnico y adquirir un profundo conocimiento de los estándares industriales alemanes.",
 
@@ -303,11 +303,11 @@ const translations = {
         "ufro_termo_subtitle": "Entwicklung von Lehrmaterialien",
         "ufro_termo_detail_text": "Um es in eine geschäftliche Perspektive zu rücken: Die Thermodynamik ist ein Grundpfeiler für Energieeffizienz und Kostenoptimierung in jedem industriellen Prozess, der mit Wärme- oder Energieübertragung verbunden ist. Als Tutor für den praktischen Teil dieses Kurses war es mein Ziel, diese theoretischen Prinzipien in der operativen Realität zu verankern. Ich war verantwortlich für die Anleitung und Bewertung der Studierenden bei der Analyse von Fallstudien und Laborerfahrungen, bei denen sie Stoff- und Energiebilanzen anwandten, um thermodynamische Systeme und Produktionsprozesse zu optimieren. Ich leitete Aktivitäten, die darauf abzielten, die technische Machbarkeit dieser Verbesserungen durch den Einsatz wissenschaftlich-technologischer und Projektmanagement-Werkzeuge zu bewerten. Diese Erfahrung stärkte nicht nur meine Fähigkeit, technische Teams zu leiten, sondern festigte auch meine Kompetenz, komplexe physikalische Gesetze in Vorschläge für kontinuierliche Verbesserung, Effizienz und Nachhaltigkeit für die Industrie zu übersetzen.",
         
-        "coax_ene_title": "Praktikum: CO-AX Válvulas S.L. (Jan-Mär 2024)",
+        "coax_ene_title": "Praktikum: CO-AX Válvulas S.L.",
         "coax_ene_subtitle": "Entwicklung einer Prüfbank",
         "coax_ene_detail_text": "Design und Entwicklung einer Prüfbank für Ventile. Erstellung technischer Dokumentation und Durchführung von Fehleranalysen zur Prozessoptimierung.",
         
-        "mtech_title": "Praktikum: m-tech gmbh (Deutschland)",
+        "mtech_title": "Praktikum: m-tech gmbh",
         "mtech_subtitle": "SPS-Programmierung und Automatisierung",
         "mtech_detail_text": "SPS-Programmierung (PLC) für ein halbautomatisches Gasfüllsystem. Direkte Anwendung von Deutsch im technischen Arbeitsumfeld und tiefer Einblick in deutsche Industriestandards.",
 
@@ -403,11 +403,11 @@ const translations = {
         "ufro_termo_subtitle": "Development of supplementary materials",
         "ufro_termo_detail_text": "To put it into a business perspective: Thermodynamics is the fundamental pillar for energy efficiency and cost optimization in any industrial process involving heat or energy transfer. As a Teaching Assistant for the practical section of this course, my goal was to ground these theoretical principles in operational reality. I was responsible for guiding and evaluating students in the analysis of case studies and laboratory experiences, where they applied mass and energy balances to optimize thermodynamic systems and production processes. I led activities focused on evaluating the technical feasibility of these improvements through the use of scientific-technological and project management tools. This experience not only strengthened my ability to manage technical teams but also consolidated my skill in translating complex physical laws into proposals for continuous improvement, efficiency, and sustainability for the industry.",
         
-        "coax_ene_title": "Internship: CO-AX Válvulas S.L. (Jan-Mar 2024)",
+        "coax_ene_title": "Internship: CO-AX Válvulas S.L.",
         "coax_ene_subtitle": "Test bench development",
         "coax_ene_detail_text": "Design and development of a test bench for valves. Created technical documentation and performed error analysis focused on industrial process optimization.",
         
-        "mtech_title": "Internship: m-tech gmbh (Germany)",
+        "mtech_title": "Internship: m-tech gmbh",
         "mtech_subtitle": "PLC Programming and Automation",
         "mtech_detail_text": "PLC programming for a semi-automatic gas filling system. This experience allowed me to directly apply the German language in a technical environment and gain a deep understanding of German industrial standards.",
 
