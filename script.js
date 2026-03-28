@@ -205,7 +205,7 @@ const translations = {
         
         "coax_ene_title": "Práctica: CO-AX Válvulas S.L.",
         "coax_ene_subtitle": "Desarrollo de banco de pruebas",
-        "coax_ene_detail_text": "Diseño y desarrollo inicial de un banco de pruebas para válvulas. Realicé documentación técnica detallada y análisis de errores enfocados en la optimización de procesos industriales.",
+        "coax_ene_detail_text": "Para ponerlo en perspectiva empresarial: el diseño riguroso y el estricto cumplimiento normativo son la base para garantizar la fiabilidad, precisión y seguridad en cualquier entorno de validación industrial. Como responsable del diseño conceptual y mecánico de un banco de pruebas, lideré el proceso desde la investigación de viabilidad hasta el ensamble digital. Mi trabajo comenzó con un análisis crítico de catálogos de piezas para la selección exacta de componentes y una rigurosa revisión de los estándares técnicos y de seguridad aplicables. Posteriormente, traduje estos requerimientos en un prototipo digital de alta precisión utilizando CATIA V5, ejecutando el modelado 3D y el ensamblaje completo del sistema. Esta experiencia fortaleció mi capacidad para integrar la investigación técnica, las normativas internacionales y el diseño asistido por computadora (CAD), entregando soluciones de ingeniería estructuradas, seguras y completamente preparadas para su fabricación.",
         
         "mtech_title": "Práctica: m-tech gmbh",
         "mtech_subtitle": "Programación PLC y Automatización",
@@ -305,7 +305,7 @@ const translations = {
         
         "coax_ene_title": "Praktikum: CO-AX Válvulas S.L.",
         "coax_ene_subtitle": "Entwicklung einer Prüfbank",
-        "coax_ene_detail_text": "Design und Entwicklung einer Prüfbank für Ventile. Erstellung technischer Dokumentation und Durchführung von Fehleranalysen zur Prozessoptimierung.",
+        "coax_ene_detail_text": "Um es aus unternehmerischer Sicht zu betrachten: Ein rigoroses Design und die strikte Einhaltung von Normen sind die Grundlage für die Gewährleistung von Zuverlässigkeit, Präzision und Sicherheit in jeder industriellen Validierungsumgebung. Als Verantwortlicher für das konzeptionelle und mechanische Design eines Prüfstandes leitete ich den Prozess von der Machbarkeitsstudie bis zur digitalen Baugruppe. Meine Arbeit begann mit einer kritischen Analyse von Teilekatalogen zur genauen Auswahl von Komponenten und einer strengen Überprüfung der geltenden technischen und sicherheitsrelevanten Standards. Anschließend übertrug ich diese Anforderungen in einen hochpräzisen digitalen Prototyp mittels CATIA V5, indem ich die 3D-Modellierung und die komplette Montage des Systems durchführte. Diese Erfahrung stärkte meine Fähigkeit, technische Forschung, internationale Normen und computergestütztes Design (CAD) zu integrieren und strukturierte, sichere und vollständig fertigungsgerechte Ingenieurlösungen zu liefern.",
         
         "mtech_title": "Praktikum: m-tech gmbh",
         "mtech_subtitle": "SPS-Programmierung und Automatisierung",
@@ -405,7 +405,7 @@ const translations = {
         
         "coax_ene_title": "Internship: CO-AX Válvulas S.L.",
         "coax_ene_subtitle": "Test bench development",
-        "coax_ene_detail_text": "Design and development of a test bench for valves. Created technical documentation and performed error analysis focused on industrial process optimization.",
+        "coax_ene_detail_text": "To put it into a business perspective: rigorous design and strict regulatory compliance are the foundation for ensuring reliability, precision, and safety in any industrial validation environment. As the person responsible for the conceptual and mechanical design of a test bench, I led the process from feasibility research to digital assembly. My work began with a critical analysis of parts catalogs for the exact selection of components and a rigorous review of applicable technical and safety standards. Subsequently, I translated these requirements into a high-precision digital prototype using CATIA V5, executing the 3D modeling and complete assembly of the system. This experience strengthened my ability to integrate technical research, international regulations, and computer-aided design (CAD), delivering structured, safe, and fully manufacturing-ready engineering solutions.",
         
         "mtech_title": "Internship: m-tech gmbh",
         "mtech_subtitle": "PLC Programming and Automation",
