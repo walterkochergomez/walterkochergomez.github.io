@@ -425,7 +425,7 @@ const translations = {
 const cvFiles = {
     es: "curriculum_walter_kocher_es.pdf",
     de: "curriculum_walter_kocher_de.pdf",
-    en: "curriculum_walter_kocher_en.pdf"
+    en: "curriculum_walter_kocher_es.pdf"
 };
 
 function changeLanguage(lang) {
