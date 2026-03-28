@@ -132,7 +132,7 @@ const translations = {
         "btn_cv": "Descargar CV en PDF",
         "exp_title": "Experiencia Laboral",
         "date_actual": "Agosto 2024 - Actual",
-        "date_actual_2025": "2025 - Actual", // NUEVA FECHA AÑADIDA
+        "date_actual_2025": "2025 - Actual",
         "exp_role1": "Ayudante de Investigación y Operaciones",
         "exp_desc1": "Desarrollo de Talleres y realización de clases practicas",
         "exp_role2": "Ayudante de Termodinámica",
@@ -157,11 +157,19 @@ const translations = {
         "skill4": "Programación (Java, Python)",
         "skill5": "Diseño 3D (Catia v5, SolidWorks)",
         "skill6": "Comunicación Visual (Adobe Photoshop)",
+        
+        // NUEVAS HABILIDADES
+        "skill7": "Simulación (AnyLogic, Arena)",
+        "skill8": "Gemelos Digitales (Digital Twins)",
+
         "lang_title": "Idiomas",
+        "lang_es": "Español",
         "lang_de": "Alemán",
         "lang_en": "Inglés",
+        "lang_level_native": "Nivel Nativo",
         "lang_level_high": "Nivel Alto",
         "lang_level_med": "Nivel Medio",
+        
         "edu_title": "Datos Académicos",
         "edu_degree": "Licenciatura en Ciencias de la Ingeniería",
         "edu_highschool": "Enseñanza media",
@@ -224,7 +232,7 @@ const translations = {
         "btn_cv": "Lebenslauf als PDF herunterladen",
         "exp_title": "Berufserfahrung",
         "date_actual": "August 2024 - Heute",
-        "date_actual_2025": "2025 - Heute", // NUEVA FECHA AÑADIDA
+        "date_actual_2025": "2025 - Heute",
         "exp_role1": "Wissenschaftlicher Mitarbeiter für Forschung und Operations",
         "exp_desc1": "Entwicklung von Workshops und Durchführung von praktischem Unterricht",
         "exp_role2": "Tutor für Thermodynamik",
@@ -249,11 +257,19 @@ const translations = {
         "skill4": "Programmierung (Java, Python)",
         "skill5": "3D-Design (Catia v5, SolidWorks)",
         "skill6": "Visuelle Kommunikation (Adobe Photoshop)",
+        
+        // NUEVAS HABILIDADES
+        "skill7": "Simulation (AnyLogic, Arena)",
+        "skill8": "Digitale Zwillinge (Digital Twins)",
+
         "lang_title": "Sprachen",
+        "lang_es": "Spanisch",
         "lang_de": "Deutsch",
         "lang_en": "Englisch",
+        "lang_level_native": "Muttersprache",
         "lang_level_high": "Hohes Niveau",
         "lang_level_med": "Mittleres Niveau",
+        
         "edu_title": "Ausbildung",
         "edu_degree": "Bachelor of Science in den Ingenieurwissenschaften",
         "edu_highschool": "Abitur / Sekundarstufe",
@@ -316,7 +332,7 @@ const translations = {
         "btn_cv": "Download CV in PDF",
         "exp_title": "Work Experience",
         "date_actual": "August 2024 - Present",
-        "date_actual_2025": "2025 - Present", // NUEVA FECHA AÑADIDA
+        "date_actual_2025": "2025 - Present",
         "exp_role1": "Research and Operations Assistant",
         "exp_desc1": "Development of workshops and conducting practical classes",
         "exp_role2": "Thermodynamics Teaching Assistant",
@@ -341,11 +357,19 @@ const translations = {
         "skill4": "Programming (Java, Python)",
         "skill5": "3D Design (Catia v5, SolidWorks)",
         "skill6": "Visual Communication (Adobe Photoshop)",
+        
+        // NUEVAS HABILIDADES
+        "skill7": "Simulation (AnyLogic, Arena)",
+        "skill8": "Digital Twins",
+
         "lang_title": "Languages",
+        "lang_es": "Spanish",
         "lang_de": "German",
         "lang_en": "English",
+        "lang_level_native": "Native",
         "lang_level_high": "Advanced",
         "lang_level_med": "Intermediate",
+        
         "edu_title": "Education",
         "edu_degree": "Bachelor of Science in Engineering",
         "edu_highschool": "High School Diploma",
