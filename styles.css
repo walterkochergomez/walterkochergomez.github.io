@@ -669,3 +669,7 @@ footer {
     transform: scale(1.02);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
+/* Justificar el texto en las páginas de detalle de experiencia */
+.detail-section p {
+    text-align: justify;
+}
