@@ -155,7 +155,7 @@ const translations = {
         "skill2": "Análisis de Datos",
         "skill3": "Automatización y PLC",
         "skill4": "Programación (Java, Python)",
-        "skill5": "Diseño 3D (Catia v5, SolidWorks)",
+        "skill5": "Diseño 3D (Catia v5, SolidWorks, Inventor)",
         "skill6": "Comunicación Visual (Adobe Photoshop)",
         
         // NUEVAS HABILIDADES
@@ -255,7 +255,7 @@ const translations = {
         "skill2": "Datenanalyse",
         "skill3": "Automatisierung und SPS",
         "skill4": "Programmierung (Java, Python)",
-        "skill5": "3D-Design (Catia v5, SolidWorks)",
+        "skill5": "3D-Design (Catia v5, SolidWorks, Inventor)",
         "skill6": "Visuelle Kommunikation (Adobe Photoshop)",
         
         // NUEVAS HABILIDADES
@@ -355,7 +355,7 @@ const translations = {
         "skill2": "Data Analysis",
         "skill3": "Automation and PLC",
         "skill4": "Programming (Java, Python)",
-        "skill5": "3D Design (Catia v5, SolidWorks)",
+        "skill5": "3D Design (Catia v5, SolidWorks, Inventor)",
         "skill6": "Visual Communication (Adobe Photoshop)",
         
         // NUEVAS HABILIDADES
