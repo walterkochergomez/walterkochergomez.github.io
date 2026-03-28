@@ -654,3 +654,18 @@ footer {
     transform: scale(1.03);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
+
+/* Clase especial para imágenes completas (Dashboards, capturas, etc) */
+.gallery-img-full {
+    width: 100%;
+    height: auto; /* Esto permite que la imagen crezca proporcionalmente */
+    object-fit: contain; /* Asegura que no se recorte nada */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.gallery-img-full:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
