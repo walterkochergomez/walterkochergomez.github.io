@@ -1,3 +1,122 @@
+// Menú Hamburguesa para móviles (a prueba de fallos)
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+}
+
+// Cerrar menú al clickear enlace
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    if (hamburger && navMenu) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+}));
+
+// Animaciones al hacer scroll (Aparecer suavemente)
+const fadeInObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
+            observer.unobserve(entry.target); 
+        }
+    });
+}, { threshold: 0.1 });
+
+// Seleccionar elementos para animar
+document.querySelectorAll('h3, #sobre-mi p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .contact-form form, .detail-section').forEach(el => {
+    fadeInObserver.observe(el);
+});
+
+// Animación específica para las barras de idiomas
+const skillObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const progressBars = entry.target.querySelectorAll('.lang-bar-fill');
+            progressBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                bar.style.width = width;
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+const languagesSection = document.querySelector('.languages');
+if (languagesSection) {
+    skillObserver.observe(languagesSection);
+}
+
+// Efecto del Navbar al hacer Scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const logo = document.querySelector('.nav-logo');
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(217, 224, 229, 0.98)';
+            navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            if (logo) logo.style.display = 'block';
+        } else {
+            navbar.style.background = 'var(--bg-header)';
+            navbar.style.boxShadow = 'none';
+            if (window.innerWidth > 768 && logo) logo.style.display = 'none';
+        }
+    }
+});
+
+// Formulario de Contacto Funcional con Formspree
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault(); 
+        const data = new FormData(contactForm);
+        
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+            
+            const currentLang = localStorage.getItem('preferredLanguage') || 'es';
+            const successMsg = {
+                es: "¡Mensaje enviado con éxito!",
+                de: "Nachricht erfolgreich gesendet!",
+                en: "Message sent successfully!"
+            };
+            const errorMsg = {
+                es: "Hubo un problema. Intenta de nuevo.",
+                de: "Es gab ein Problem. Bitte versuchen Sie es erneut.",
+                en: "There was a problem. Please try again."
+            };
+
+            if (response.ok) {
+                formStatus.textContent = successMsg[currentLang];
+                formStatus.style.display = "block";
+                contactForm.reset();
+            } else {
+                formStatus.textContent = errorMsg[currentLang];
+                formStatus.style.display = "block";
+            }
+        } catch (error) {
+            formStatus.textContent = "Error de conexión.";
+            formStatus.style.display = "block";
+        }
+    });
+}
+
+// Año actual dinámico en el footer
+const yearEl = document.getElementById('year');
+if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+}
+
 // --- SISTEMA MULTI-IDIOMA (ES / DE / EN) ---
 const translations = {
     es: {
@@ -232,3 +351,58 @@ const translations = {
         "mtech_detail_text": "PLC programming for a semi-automatic gas filling system. This experience allowed me to directly apply the German language in a technical environment and gain a deep understanding of German industrial standards."
     }
 };
+
+// Archivos de CV correspondientes a cada idioma
+const cvFiles = {
+    es: "curriculum_walter_kocher_es.pdf",
+    de: "curriculum_walter_kocher_de.pdf",
+    en: "curriculum_walter_kocher_en.pdf"
+};
+
+function changeLanguage(lang) {
+    // 1. Cambiar los textos normales
+    const elements = document.querySelectorAll('[data-key]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[lang] && translations[lang][key]) {
+            if(element.children.length === 0) {
+                element.textContent = translations[lang][key];
+            } else {
+                 element.innerHTML = element.innerHTML.replace(element.textContent.trim(), translations[lang][key]);
+            }
+        }
+    });
+
+    // 2. Cambiar los placeholders del formulario
+    const placeholders = document.querySelectorAll('[data-placeholder-key]');
+    placeholders.forEach(element => {
+        const key = element.getAttribute('data-placeholder-key');
+        if (translations[lang] && translations[lang][key]) {
+            element.setAttribute('placeholder', translations[lang][key]);
+        }
+    });
+
+    // 3. Cambiar el archivo del CV a descargar (solo si existe el botón)
+    const cvLink = document.getElementById('cv-link');
+    if (cvLink) {
+        cvLink.href = cvFiles[lang];
+    }
+
+    // 4. Actualizar la clase "active" en los botones
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    
+    // Solo intentar añadir la clase si el botón existe en la página actual
+    const currentBtn = document.getElementById('btn-' + lang);
+    if(currentBtn) {
+        currentBtn.classList.add('active');
+    }
+
+    // 5. Guardar preferencia en el navegador
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+// Inicializar idioma al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'es';
+    changeLanguage(savedLang);
+});
