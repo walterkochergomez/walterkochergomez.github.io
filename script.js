@@ -1,16 +1,20 @@
-// Menú Hamburguesa para móviles
+// Menú Hamburguesa para móviles (CORREGIDO: a prueba de fallos)
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+}
 
 // Cerrar menú al clickear enlace
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
+    if (hamburger && navMenu) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
 }));
 
 // Animaciones al hacer scroll (Aparecer suavemente)
@@ -51,14 +55,16 @@ if (languagesSection) {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     const logo = document.querySelector('.nav-logo');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(217, 224, 229, 0.98)';
-        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-        if (logo) logo.style.display = 'block';
-    } else {
-        navbar.style.background = 'var(--bg-header)';
-        navbar.style.boxShadow = 'none';
-        if (window.innerWidth > 768 && logo) logo.style.display = 'none';
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(217, 224, 229, 0.98)';
+            navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            if (logo) logo.style.display = 'block';
+        } else {
+            navbar.style.background = 'var(--bg-header)';
+            navbar.style.boxShadow = 'none';
+            if (window.innerWidth > 768 && logo) logo.style.display = 'none';
+        }
     }
 });
 
@@ -106,8 +112,10 @@ if (contactForm) {
 }
 
 // Año actual dinámico en el footer
-document.getElementById('year').textContent = new Date().getFullYear();
-
+const yearEl = document.getElementById('year');
+if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+}
 
 // --- SISTEMA MULTI-IDIOMA (ES / DE / EN) ---
 const translations = {
@@ -323,7 +331,7 @@ function changeLanguage(lang) {
         }
     });
 
-    // 3. Cambiar el archivo del CV a descargar
+    // 3. Cambiar el archivo del CV a descargar (solo si existe el botón)
     const cvLink = document.getElementById('cv-link');
     if (cvLink) {
         cvLink.href = cvFiles[lang];
