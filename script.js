@@ -182,7 +182,7 @@ const translations = {
         
         "ufro_inv_title": "Ayudantía: Investigación y Operaciones",
         "ufro_inv_subtitle": "Apoyo en investigación y desarrollo de talleres",
-        "ufro_inv_detail_text": "Apoyo continuo en proyectos de investigación y ejecución de talleres prácticos. Desarrollo de material didáctico y análisis de datos operativos para la mejora continua de los procesos académicos.",
+        "ufro_inv_detail_text": "Para ponerlo en perspectiva empresarial: la Investigación de Operaciones es el motor analítico que permite a las industrias minimizar costos, optimizar recursos y tomar decisiones estratégicas para la gestión de sistemas complejos. Como Ayudante de la sección práctica de esta asignatura, mi objetivo fue conectar esta capacidad analítica con la realidad operativa. Fui responsable del diseño y evaluación de casos de estudio aplicados , guiando a los alumnos en la traducción de problemas industriales como la optimización de rutas de transporte o la mejora de procesos productivos —en modelos matemáticos. A través de la instrucción en software de optimización avanzado LINGO, AMPL/CPlex y Gurobi, lideré la resolución de estos desafíos. Esta experiencia no solo me permitió formar equipos de trabajo , sino que consolidó mi propia capacidad para transformar datos en soluciones concretas que impulsan la eficacia y eficiencia en las organizaciones.",
         
         "ufro_termo_title": "Ayudantía: Termodinámica",
         "ufro_termo_subtitle": "Desarrollo de material complementario",
