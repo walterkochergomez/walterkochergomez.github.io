@@ -209,7 +209,7 @@ const translations = {
         
         "mtech_title": "Práctica: m-tech gmbh",
         "mtech_subtitle": "Programación PLC y Automatización",
-        "mtech_detail_text": "Programación de PLC (SPS) para un sistema semiautomático de llenado de gases. Esta experiencia me permitió aplicar directamente el idioma alemán en un entorno técnico y adquirir un profundo conocimiento de los estándares industriales alemanes.",
+        "mtech_detail_text": "Para ponerlo en perspectiva empresarial: la automatización precisa es el núcleo de la seguridad operativa y la eficiencia. Como Desarrollador de Software de Control, estuve a cargo de la programación y documentación de un sistema semiautomático de llenado de gases operado mediante PLCs Unitronics. Mi trabajo abarcó desde la configuración de hardware y redes de comunicación Modbus TCP/IP, hasta el desarrollo de lógica de control compleja con lazos PID para la gestión exacta de presión y temperatura. Diseñé una Interfaz Hombre-Máquina (HMI) multilingüe e intuitiva, incorporando visualización dinámica de P&ID, modos de operación manual/automático y un sistema robusto de gestión de alarmas. Además, redacté toda la documentación técnica y manuales de operación. Esta experiencia consolidó mi capacidad para integrar hardware y software en soluciones industriales fiables, priorizando siempre la seguridad, la precisión milimétrica y la experiencia del usuario final.",
 
         "ufro_log_title": "Ayudantía: Logística y Cadena de Suministros",
         "ufro_log_subtitle": "Desarrollo de Talleres y clases prácticas",
@@ -309,7 +309,7 @@ const translations = {
         
         "mtech_title": "Praktikum: m-tech gmbh",
         "mtech_subtitle": "SPS-Programmierung und Automatisierung",
-        "mtech_detail_text": "SPS-Programmierung (PLC) für ein halbautomatisches Gasfüllsystem. Direkte Anwendung von Deutsch im technischen Arbeitsumfeld und tiefer Einblick in deutsche Industriestandards.",
+        "mtech_detail_text": "Um es in eine geschäftliche Perspektive zu rücken: Präzise Automatisierung ist das Herzstück für Betriebssicherheit und Effizienz. Als Entwickler für Steuerungssoftware war ich für die Programmierung und Dokumentation eines halbautomatischen Gasabfüllsystems auf Basis von Unitronics-SPS (Speicherprogrammierbare Steuerungen) verantwortlich. Meine Arbeit reichte von der Hardware- und Modbus-TCP/IP-Netzwerkkonfiguration bis hin zur Entwicklung komplexer Steuerungslogik mit PID-Reglern für exaktes Druck- und Temperaturmanagement. Ich entwarf eine intuitive, mehrsprachige Mensch-Maschine-Schnittstelle (HMI), die eine dynamische P&ID-Visualisierung, manuelle/automatische Betriebsmodi und ein robustes Alarmmanagementsystem integrierte. Darüber hinaus verfasste ich die gesamte technische Dokumentation und die Bedienungsanleitungen. Diese Erfahrung festigte meine Fähigkeit, Hardware und Software zu zuverlässigen industriellen Lösungen zu integrieren, bei denen Sicherheit, höchste Präzision und Benutzerfreundlichkeit stets an erster Stelle stehen.",
 
         "ufro_log_title": "Tutorium: Logistik und Supply Chain Management",
         "ufro_log_subtitle": "Entwicklung von Workshops und praktischem Unterricht",
@@ -409,7 +409,7 @@ const translations = {
         
         "mtech_title": "Internship: m-tech gmbh",
         "mtech_subtitle": "PLC Programming and Automation",
-        "mtech_detail_text": "PLC programming for a semi-automatic gas filling system. This experience allowed me to directly apply the German language in a technical environment and gain a deep understanding of German industrial standards.",
+        "mtech_detail_text": "To put it into a business perspective: precise automation is the core of operational safety and efficiency. As a Control Software Developer, I was in charge of programming and documenting a semi-automatic gas filling system operated by Unitronics PLCs. My work ranged from hardware and Modbus TCP/IP communication network configuration to the development of complex control logic using PID loops for exact pressure and temperature management. I designed an intuitive, multi-language Human-Machine Interface (HMI), incorporating dynamic P&ID visualization, manual/automatic operation modes, and a robust alarm management system. Furthermore, I authored all technical documentation and operation manuals. This experience consolidated my ability to integrate hardware and software into reliable industrial solutions, always prioritizing safety, pinpoint accuracy, and the end-user experience.",
 
         "ufro_log_title": "Assistantship: Logistics and Supply Chain",
         "ufro_log_subtitle": "Workshop development and practical classes",
