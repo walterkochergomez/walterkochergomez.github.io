@@ -161,7 +161,8 @@ const translations = {
         "contact_email_ph": "Tu email",
         "contact_msg_ph": "Tu mensaje",
         "contact_btn": "Enviar Mensaje",
-        "footer_rights": "Todos los derechos reservados."
+        "footer_rights": "Todos los derechos reservados.",
+        "btn_more_info": "Más información"
     },
     de: {
         "nav_about": "Über mich",
@@ -213,7 +214,8 @@ const translations = {
         "contact_email_ph": "Ihre E-Mail",
         "contact_msg_ph": "Ihre Nachricht",
         "contact_btn": "Nachricht senden",
-        "footer_rights": "Alle Rechte vorbehalten."
+        "footer_rights": "Alle Rechte vorbehalten.",
+        "btn_more_info": "Weitere Informationen"
     },
     en: {
         "nav_about": "About Me",
@@ -265,7 +267,8 @@ const translations = {
         "contact_email_ph": "Your email",
         "contact_msg_ph": "Your message",
         "contact_btn": "Send Message",
-        "footer_rights": "All rights reserved."
+        "footer_rights": "All rights reserved.",
+        "btn_more_info": "More information"
     }
 };
 
