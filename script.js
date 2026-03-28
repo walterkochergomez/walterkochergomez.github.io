@@ -132,6 +132,7 @@ const translations = {
         "btn_cv": "Descargar CV en PDF",
         "exp_title": "Experiencia Laboral",
         "date_actual": "Agosto 2024 - Actual",
+        "date_actual_2025": "2025 - Actual", // NUEVA FECHA AÑADIDA
         "exp_role1": "Ayudante de Investigación y Operaciones",
         "exp_desc1": "Desarrollo de Talleres y realización de clases practicas",
         "exp_role2": "Ayudante de Termodinámica",
@@ -143,6 +144,12 @@ const translations = {
         "exp_desc4": "Desarrollo de un banco de pruebas.",
         "exp_role5": "Práctica de estudios",
         "exp_desc5": "Programación PLC de sistema semi-automático de llenado de gases.",
+        
+        "exp_role6": "Ayudante de Logística y Cadena de Suministros",
+        "exp_desc6": "Desarrollo de Talleres y realización de clases prácticas",
+        "exp_role7": "Ayudante de Formulación y Evaluación de Proyectos",
+        "exp_desc7": "Desarrollo de Talleres y realización de clases prácticas",
+
         "skills_title": "Habilidades Técnicas y Herramientas",
         "skill1": "Mejora Continua (Lean Six Sigma)",
         "skill2": "Análisis de Datos",
@@ -180,7 +187,7 @@ const translations = {
         "coax_subtitle": "Implementación de banco de pruebas y laboratorio",
         "coax_detail_text": "Durante mi estancia en CO-AX Válvulas, lideré la implementación de un banco de pruebas para certificar la calidad de las válvulas. Además, estructuré un laboratorio de electrónica aplicando normativas internacionales en un entorno de alta exigencia.",
         
-        "ufro_inv_title": "Ayudantía: Investigación y Operaciones",
+       "ufro_inv_title": "Ayudantía: Investigación y Operaciones",
         "ufro_inv_subtitle": "Apoyo en investigación y desarrollo de talleres",
         "ufro_inv_detail_text": "Para ponerlo en perspectiva empresarial: la Investigación de Operaciones es el motor analítico que permite a las industrias minimizar costos, optimizar recursos y tomar decisiones estratégicas para la gestión de sistemas complejos. Como Ayudante de la sección práctica de esta asignatura, mi objetivo fue conectar esta capacidad analítica con la realidad operativa. Fui responsable del diseño y evaluación de casos de estudio aplicados , guiando a los alumnos en la traducción de problemas industriales como la optimización de rutas de transporte o la mejora de procesos productivos —en modelos matemáticos. A través de la instrucción en software de optimización avanzado LINGO, AMPL/CPlex y Gurobi, lideré la resolución de estos desafíos. Esta experiencia no solo me permitió formar equipos de trabajo , sino que consolidó mi propia capacidad para transformar datos en soluciones concretas que impulsan la eficacia y eficiencia en las organizaciones.",
         
@@ -194,7 +201,15 @@ const translations = {
         
         "mtech_title": "Práctica: m-tech gmbh (Alemania)",
         "mtech_subtitle": "Programación PLC y Automatización",
-        "mtech_detail_text": "Programación de PLC (SPS) para un sistema semiautomático de llenado de gases. Esta experiencia me permitió aplicar directamente el idioma alemán en un entorno técnico y adquirir un profundo conocimiento de los estándares industriales alemanes."
+        "mtech_detail_text": "Programación de PLC (SPS) para un sistema semiautomático de llenado de gases. Esta experiencia me permitió aplicar directamente el idioma alemán en un entorno técnico y adquirir un profundo conocimiento de los estándares industriales alemanes.",
+
+        "ufro_log_title": "Ayudantía: Logística y Cadena de Suministros",
+        "ufro_log_subtitle": "Desarrollo de Talleres y clases prácticas",
+        "ufro_log_detail_text": "Planificación y ejecución de talleres prácticos para el curso de Logística y Cadena de Suministros, guiando a los estudiantes en la resolución de casos reales y optimización de procesos.",
+
+        "ufro_proy_title": "Ayudantía: Formulación y Evaluación de Proyectos",
+        "ufro_proy_subtitle": "Desarrollo de Talleres y clases prácticas",
+        "ufro_proy_detail_text": "Apoyo en la asignatura de Formulación y Evaluación de Proyectos mediante la realización de clases prácticas y talleres, facilitando el aprendizaje en el análisis de viabilidad técnica y económica."
     },
     de: {
         "nav_about": "Über mich",
@@ -209,6 +224,7 @@ const translations = {
         "btn_cv": "Lebenslauf als PDF herunterladen",
         "exp_title": "Berufserfahrung",
         "date_actual": "August 2024 - Heute",
+        "date_actual_2025": "2025 - Heute", // NUEVA FECHA AÑADIDA
         "exp_role1": "Wissenschaftlicher Mitarbeiter für Forschung und Operations",
         "exp_desc1": "Entwicklung von Workshops und Durchführung von praktischem Unterricht",
         "exp_role2": "Tutor für Thermodynamik",
@@ -220,6 +236,12 @@ const translations = {
         "exp_desc4": "Entwicklung eines Prüfstands.",
         "exp_role5": "Praktikum",
         "exp_desc5": "SPS-Programmierung eines halbautomatischen Gasabfüllsystems.",
+        
+        "exp_role6": "Tutor für Logistik und Supply Chain Management",
+        "exp_desc6": "Entwicklung von Workshops und Durchführung von praktischem Unterricht",
+        "exp_role7": "Tutor für Projektentwicklung und -bewertung",
+        "exp_desc7": "Entwicklung von Workshops und Durchführung von praktischem Unterricht",
+
         "skills_title": "Technische Fähigkeiten und Werkzeuge",
         "skill1": "Kontinuierliche Verbesserung (Lean Six Sigma)",
         "skill2": "Datenanalyse",
@@ -271,7 +293,15 @@ const translations = {
         
         "mtech_title": "Praktikum: m-tech gmbh (Deutschland)",
         "mtech_subtitle": "SPS-Programmierung und Automatisierung",
-        "mtech_detail_text": "SPS-Programmierung (PLC) für ein halbautomatisches Gasfüllsystem. Direkte Anwendung von Deutsch im technischen Arbeitsumfeld und tiefer Einblick in deutsche Industriestandards."
+        "mtech_detail_text": "SPS-Programmierung (PLC) für ein halbautomatisches Gasfüllsystem. Direkte Anwendung von Deutsch im technischen Arbeitsumfeld und tiefer Einblick in deutsche Industriestandards.",
+
+        "ufro_log_title": "Tutorium: Logistik und Supply Chain Management",
+        "ufro_log_subtitle": "Entwicklung von Workshops und praktischem Unterricht",
+        "ufro_log_detail_text": "Planung und Durchführung von praxisnahen Workshops für den Kurs Logistik und Supply Chain Management, Anleitung der Studierenden bei der Lösung realer Fälle und der Prozessoptimierung.",
+
+        "ufro_proy_title": "Tutorium: Projektentwicklung und -bewertung",
+        "ufro_proy_subtitle": "Entwicklung von Workshops und praktischem Unterricht",
+        "ufro_proy_detail_text": "Unterstützung im Fach Projektentwicklung und -bewertung durch die Durchführung von praktischem Unterricht und Workshops, um das Erlernen von technischen und wirtschaftlichen Machbarkeitsanalysen zu erleichtern."
     },
     en: {
         "nav_about": "About Me",
@@ -286,6 +316,7 @@ const translations = {
         "btn_cv": "Download CV in PDF",
         "exp_title": "Work Experience",
         "date_actual": "August 2024 - Present",
+        "date_actual_2025": "2025 - Present", // NUEVA FECHA AÑADIDA
         "exp_role1": "Research and Operations Assistant",
         "exp_desc1": "Development of workshops and conducting practical classes",
         "exp_role2": "Thermodynamics Teaching Assistant",
@@ -297,6 +328,12 @@ const translations = {
         "exp_desc4": "Development of a test bench.",
         "exp_role5": "Internship",
         "exp_desc5": "PLC programming of a semi-automatic gas filling system.",
+        
+        "exp_role6": "Teaching Assistant: Logistics and Supply Chain",
+        "exp_desc6": "Development of workshops and conducting practical classes",
+        "exp_role7": "Teaching Assistant: Project Formulation and Evaluation",
+        "exp_desc7": "Development of workshops and conducting practical classes",
+
         "skills_title": "Technical Skills and Tools",
         "skill1": "Continuous Improvement (Lean Six Sigma)",
         "skill2": "Data Analysis",
@@ -348,7 +385,15 @@ const translations = {
         
         "mtech_title": "Internship: m-tech gmbh (Germany)",
         "mtech_subtitle": "PLC Programming and Automation",
-        "mtech_detail_text": "PLC programming for a semi-automatic gas filling system. This experience allowed me to directly apply the German language in a technical environment and gain a deep understanding of German industrial standards."
+        "mtech_detail_text": "PLC programming for a semi-automatic gas filling system. This experience allowed me to directly apply the German language in a technical environment and gain a deep understanding of German industrial standards.",
+
+        "ufro_log_title": "Assistantship: Logistics and Supply Chain",
+        "ufro_log_subtitle": "Workshop development and practical classes",
+        "ufro_log_detail_text": "Planning and execution of practical workshops for the Logistics and Supply Chain course, guiding students in solving real cases and optimizing processes.",
+
+        "ufro_proy_title": "Assistantship: Project Formulation and Evaluation",
+        "ufro_proy_subtitle": "Workshop development and practical classes",
+        "ufro_proy_detail_text": "Support in the Project Formulation and Evaluation course through practical classes and workshops, facilitating learning in technical and economic feasibility analysis."
     }
 };
 
