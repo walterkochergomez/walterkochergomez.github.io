@@ -122,6 +122,8 @@ const translations = {
         
         "edu_title": "Datos Académicos",
         "edu_degree": "Licenciatura en Ciencias de la Ingeniería",
+        "edu_minor": "Minor en Análisis de Datos", // NUEVA CLAVE
+        "status_current": "(En curso)", // NUEVA CLAVE
         "edu_highschool": "Enseñanza media",
         "btn_cert": "Ver Certificado",
         "other_title": "Otras Experiencias",
@@ -225,6 +227,8 @@ const translations = {
         
         "edu_title": "Ausbildung",
         "edu_degree": "Bachelor of Science in den Ingenieurwissenschaften",
+        "edu_minor": "Minor in Datenanalyse", // NUEVA CLAVE
+        "status_current": "(In Ausbildung)", // NUEVA CLAVE
         "edu_highschool": "Abitur / Sekundarstufe",
         "btn_cert": "Zertifikat ansehen",
         "other_title": "Weitere Erfahrungen",
@@ -328,6 +332,8 @@ const translations = {
         
         "edu_title": "Education",
         "edu_degree": "Bachelor of Science in Engineering",
+        "edu_minor": "Minor in Data Analysis", // NUEVA CLAVE
+        "status_current": "(In progress)", // NUEVA CLAVE
         "edu_highschool": "High School Diploma",
         "btn_cert": "View Certificate",
         "other_title": "Other Experiences",
