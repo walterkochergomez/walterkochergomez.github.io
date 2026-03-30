@@ -68,55 +68,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Formulario de Contacto Funcional con Formspree
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('form-status');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault(); 
-        const data = new FormData(contactForm);
-        
-        try {
-            const response = await fetch(contactForm.action, {
-                method: contactForm.method,
-                body: data,
-                headers: { 'Accept': 'application/json' }
-            });
-            
-            const currentLang = localStorage.getItem('preferredLanguage') || 'es';
-            const successMsg = {
-                es: "¡Mensaje enviado con éxito!",
-                de: "Nachricht erfolgreich gesendet!",
-                en: "Message sent successfully!"
-            };
-            const errorMsg = {
-                es: "Hubo un problema. Intenta de nuevo.",
-                de: "Es gab ein Problem. Bitte versuchen Sie es erneut.",
-                en: "There was a problem. Please try again."
-            };
-
-            if (response.ok) {
-                formStatus.textContent = successMsg[currentLang];
-                formStatus.style.display = "block";
-                contactForm.reset();
-            } else {
-                formStatus.textContent = errorMsg[currentLang];
-                formStatus.style.display = "block";
-            }
-        } catch (error) {
-            formStatus.textContent = "Error de conexión.";
-            formStatus.style.display = "block";
-        }
-    });
-}
-
-// Año actual dinámico en el footer
-const yearEl = document.getElementById('year');
-if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-}
-
 // --- SISTEMA MULTI-IDIOMA (ES / DE / EN) ---
 const translations = {
     es: {
@@ -138,7 +89,7 @@ const translations = {
         "exp_role2": "Ayudante de Termodinámica",
         "exp_desc2": "Desarrollo de material complementario",
         "exp_role3": "Práctica de estudios",
-        "exp_desc3_1": "Gestión integral de la cadena de suministro y ventas mediante SAP ERP.",
+        "exp_desc3_1": "Implementación de un banco de pruebas.",
         "exp_desc3_2": "Desarrollo de laboratorio de electrónica.",
         "exp_role4": "Práctica de estudios",
         "exp_desc4": "Desarrollo de un banco de pruebas.",
@@ -155,10 +106,9 @@ const translations = {
         "skill2": "Análisis de Datos",
         "skill3": "Automatización y PLC",
         "skill4": "Programación (Java, Python)",
-        "skill5": "Diseño 3D (Catia v5, SolidWorks, Inventor)",
+        "skill5": "Diseño 3D (Catia v5, SolidWorks)",
         "skill6": "Comunicación Visual (Adobe Photoshop)",
         
-        // NUEVAS HABILIDADES
         "skill7": "Simulación (AnyLogic, Arena)",
         "skill8": "Gemelos Digitales (Digital Twins)",
 
@@ -187,7 +137,11 @@ const translations = {
         "footer_rights": "Todos los derechos reservados.",
         "btn_more_info": "Más información",
         
-        // --- TEXTOS PARA PÁGINAS DE DETALLE ---
+        // Mensajes del formulario
+        "msg_success": "¡Mensaje enviado con éxito!",
+        "msg_error": "Hubo un problema. Intenta de nuevo.",
+        
+         // --- TEXTOS PARA PÁGINAS DE DETALLE ---
         "nav_back": "Volver al Portafolio",
         "gallery_title": "Galería de Proyectos",
         
@@ -238,7 +192,7 @@ const translations = {
         "exp_role2": "Tutor für Thermodynamik",
         "exp_desc2": "Entwicklung von ergänzenden Lehrmaterialien",
         "exp_role3": "Praktikum",
-        "exp_desc3_1": "Ganzheitliches Supply-Chain- und Vertriebsmanagement über SAP ERP.",
+        "exp_desc3_1": "Implementierung eines Prüfstands.",
         "exp_desc3_2": "Entwicklung eines Elektroniklabors.",
         "exp_role4": "Praktikum",
         "exp_desc4": "Entwicklung eines Prüfstands.",
@@ -255,10 +209,9 @@ const translations = {
         "skill2": "Datenanalyse",
         "skill3": "Automatisierung und SPS",
         "skill4": "Programmierung (Java, Python)",
-        "skill5": "3D-Design (Catia v5, SolidWorks, Inventor)",
+        "skill5": "3D-Design (Catia v5, SolidWorks)",
         "skill6": "Visuelle Kommunikation (Adobe Photoshop)",
         
-        // NUEVAS HABILIDADES
         "skill7": "Simulation (AnyLogic, Arena)",
         "skill8": "Digitale Zwillinge (Digital Twins)",
 
@@ -286,8 +239,12 @@ const translations = {
         "contact_btn": "Nachricht senden",
         "footer_rights": "Alle Rechte vorbehalten.",
         "btn_more_info": "Weitere Informationen",
+
+        // Mensajes del formulario
+        "msg_success": "Nachricht erfolgreich gesendet!",
+        "msg_error": "Es gab ein Problem. Bitte versuchen Sie es erneut.",
         
-        // --- TEXTOS PARA PÁGINAS DE DETALLE ---
+         // --- TEXTOS PARA PÁGINAS DE DETALLE ---
         "nav_back": "Zurück zum Portfolio",
         "gallery_title": "Projektgalerie",
         
@@ -338,7 +295,7 @@ const translations = {
         "exp_role2": "Thermodynamics Teaching Assistant",
         "exp_desc2": "Development of supplementary materials",
         "exp_role3": "Internship",
-        "exp_desc3_1": "Comprehensive supply chain and sales management via SAP ERP.",
+        "exp_desc3_1": "Implementation of a test bench.",
         "exp_desc3_2": "Development of an electronics laboratory.",
         "exp_role4": "Internship",
         "exp_desc4": "Development of a test bench.",
@@ -355,10 +312,9 @@ const translations = {
         "skill2": "Data Analysis",
         "skill3": "Automation and PLC",
         "skill4": "Programming (Java, Python)",
-        "skill5": "3D Design (Catia v5, SolidWorks, Inventor)",
+        "skill5": "3D Design (Catia v5, SolidWorks)",
         "skill6": "Visual Communication (Adobe Photoshop)",
         
-        // NUEVAS HABILIDADES
         "skill7": "Simulation (AnyLogic, Arena)",
         "skill8": "Digital Twins",
 
@@ -386,8 +342,12 @@ const translations = {
         "contact_btn": "Send Message",
         "footer_rights": "All rights reserved.",
         "btn_more_info": "More information",
+
+        // Mensajes del formulario
+        "msg_success": "Message sent successfully!",
+        "msg_error": "There was a problem. Please try again.",
         
-        // --- TEXTOS PARA PÁGINAS DE DETALLE ---
+         // --- TEXTOS PARA PÁGINAS DE DETALLE ---
         "nav_back": "Back to Portfolio",
         "gallery_title": "Project Gallery",
         
@@ -421,11 +381,47 @@ const translations = {
     }
 };
 
+// Formulario de Contacto Funcional con Formspree (CORREGIDO PARA TRADUCCIONES)
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault(); 
+        const data = new FormData(contactForm);
+        const currentLang = localStorage.getItem('preferredLanguage') || 'es';
+        
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                // Asignamos el data-key para que cambie de idioma dinámicamente
+                formStatus.setAttribute('data-key', 'msg_success');
+                formStatus.textContent = translations[currentLang]['msg_success'];
+                formStatus.style.display = "block";
+                contactForm.reset();
+            } else {
+                formStatus.setAttribute('data-key', 'msg_error');
+                formStatus.textContent = translations[currentLang]['msg_error'];
+                formStatus.style.display = "block";
+            }
+        } catch (error) {
+            formStatus.setAttribute('data-key', 'msg_error');
+            formStatus.textContent = translations[currentLang]['msg_error'];
+            formStatus.style.display = "block";
+        }
+    });
+}
+
 // Archivos de CV correspondientes a cada idioma
 const cvFiles = {
     es: "curriculum_walter_kocher_es.pdf",
     de: "curriculum_walter_kocher_de.pdf",
-    en: "curriculum_walter_kocher_es.pdf"
+    en: "curriculum_walter_kocher_en.pdf"
 };
 
 function changeLanguage(lang) {
