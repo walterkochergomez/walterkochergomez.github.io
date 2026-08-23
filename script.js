@@ -137,6 +137,7 @@ const translations = {
         "lang_level_med": "Nivel Medio",
         
         "edu_title": "Datos Académicos",
+        "edu_degree_industrial": "Ingeniería Civil Industrial", /* NUEVA CLAVE */
         "edu_degree": "Licenciatura en Ciencias de la Ingeniería",
         "edu_minor": "Minor en Análisis de Datos", // NUEVA CLAVE
         "status_current": "(En curso)", // NUEVA CLAVE
@@ -258,6 +259,7 @@ const translations = {
         "lang_level_med": "Mittleres Niveau",
         
         "edu_title": "Ausbildung",
+        "edu_degree_industrial": "Wirtschaftsingenieurwesen", /* NUEVA CLAVE */
         "edu_degree": "Bachelor of Science in den Ingenieurwissenschaften",
         "edu_minor": "Minor in Datenanalyse", // NUEVA CLAVE
         "status_current": "(In Ausbildung)", // NUEVA CLAVE
@@ -379,6 +381,7 @@ const translations = {
         "lang_level_med": "Intermediate",
         
         "edu_title": "Education",
+        "edu_degree_industrial": "Industrial Civil Engineering", /* NUEVA CLAVE */
         "edu_degree": "Bachelor of Science in Engineering",
         "edu_minor": "Minor in Data Analysis", // NUEVA CLAVE
         "status_current": "(In progress)", // NUEVA CLAVE
