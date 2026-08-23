@@ -79,6 +79,15 @@ const translations = {
         "date_exp5": "Ene 2023 - Mar 2023",
         "date_exp6": "Mar 2025 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
         "date_exp7": "Mar 2025 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
+        "date_exp8": "Ago 2026 - Actual", /* CAMBIAR AQUÍ: Si finalizas tu tesis, cambia "Actual" por el mes de fin (ej. "Dic 2026") */
+       
+        "exp_role8": "Trabajo de Título",
+        "exp_desc8": "Desarrollo de proyecto final de grado para la titulación.",
+        
+        // ... (al final de los textos de detalle)
+        "coax_tesis_title": "Trabajo de Título: müller co-ax gmbh",
+        "coax_tesis_subtitle": "Desarrollo de proyecto final de grado",
+        "coax_tesis_detail_text": "Actualmente me encuentro desarrollando mi trabajo de título en las instalaciones de müller co-ax gmbh.",
         
         "nav_about": "Sobre Mí",
         "nav_exp": "Experiencia",
@@ -191,6 +200,15 @@ const translations = {
         "date_exp5": "Jan 2023 - Mär 2023",
         "date_exp6": "Mär 2025 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
         "date_exp7": "Mär 2025 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
+        // ... debajo de tus otras fechas
+        "date_exp8": "Aug 2026 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Enddatum (z.B. "Dez 2026") */
+        "exp_role8": "Abschlussarbeit (Thesis)",
+        "exp_desc8": "Entwicklung des Abschlussprojekts für den Studienabschluss.",
+
+        // ... (al final de los textos de detalle)
+        "coax_tesis_title": "Abschlussarbeit: müller co-ax gmbh",
+        "coax_tesis_subtitle": "Entwicklung des Abschlussprojekts",
+        "coax_tesis_detail_text": "Derzeit schreibe ich meine Abschlussarbeit bei der müller co-ax gmbh.",
         
         "nav_about": "Über mich",
         "nav_exp": "Erfahrung",
@@ -303,6 +321,15 @@ const translations = {
         "date_exp5": "Jan 2023 - Mar 2023",
         "date_exp6": "Mar 2025 - Present", /* CHANGE HERE: When ended, change "Present" to the end date */
         "date_exp7": "Mar 2025 - Present", /* CHANGE HERE: When ended, change "Present" to the end date */
+        // ... debajo de tus otras fechas
+        "date_exp8": "Aug 2026 - Present", /* CHANGE HERE: When finished, change "Present" to the end date (e.g., "Dec 2026") */
+        "exp_role8": "Final Degree Thesis",
+        "exp_desc8": "Development of the final degree project for graduation.",
+
+        // ... (al final de los textos de detalle)
+        "coax_tesis_title": "Thesis: müller co-ax gmbh",
+        "coax_tesis_subtitle": "Development of the final degree project",
+        "coax_tesis_detail_text": "I am currently developing my thesis at müller co-ax gmbh.",
         
         "nav_about": "About Me",
         "nav_exp": "Experience",
