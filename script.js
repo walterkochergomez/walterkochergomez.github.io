@@ -71,6 +71,15 @@ window.addEventListener('scroll', () => {
 // --- SISTEMA MULTI-IDIOMA (ES / DE / EN) ---
 const translations = {
     es: {
+        // --- FECHAS DE EXPERIENCIA (Formato Corto) ---
+        "date_exp1": "Ago 2024 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin (ej. "Dic 2025") */
+        "date_exp2": "Ago 2023 - Jul 2024",
+        "date_exp3": "Dic 2024 - Mar 2025",
+        "date_exp4": "Ene 2024 - Mar 2024",
+        "date_exp5": "Ene 2023 - Mar 2023",
+        "date_exp6": "Mar 2025 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
+        "date_exp7": "Mar 2025 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
+        
         "nav_about": "Sobre Mí",
         "nav_exp": "Experiencia",
         "nav_skills": "Habilidades",
@@ -176,6 +185,15 @@ const translations = {
         "ufro_proy_detail_text": "La Formulación y Evaluación de Proyectos es el puente crítico entre una idea innovadora y una inversión rentable, permitiendo a las organizaciones minimizar riesgos antes de comprometer capital. Como Ayudante de la sección práctica, lideré la mentoría de equipos en la estructuración de proyectos de inversión reales. Fui responsable de guiar y evaluar el desarrollo integral de estos proyectos, abarcando desde estudios de mercado e ingeniería técnica hasta la modelación financiera de flujos de caja y análisis de sensibilidad utilizando Microsoft Excel. Evalué talleres y presentaciones de perfiles de negocio que representaron el 50% de la calificación final , asegurando que las propuestas integraran criterios de rentabilidad económica, viabilidad técnica y responsabilidad socioambiental. Esta experiencia potenció mi capacidad para evaluar oportunidades de negocio, gestionar el riesgo y fundamentar decisiones estratégicas de inversión basadas en datos duros."
     },
     de: {
+        // --- FECHAS DE EXPERIENCIA (Formato Corto) ---
+        "date_exp1": "Aug 2024 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum (z.B. "Dez 2025") */
+        "date_exp2": "Aug 2023 - Jul 2024",
+        "date_exp3": "Dez 2024 - Mär 2025",
+        "date_exp4": "Jan 2024 - Mär 2024",
+        "date_exp5": "Jan 2023 - Mär 2023",
+        "date_exp6": "Mär 2025 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
+        "date_exp7": "Mär 2025 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
+        
         "nav_about": "Über mich",
         "nav_exp": "Erfahrung",
         "nav_skills": "Fähigkeiten",
@@ -281,6 +299,15 @@ const translations = {
         "ufro_proy_detail_text": "Die Projektformulierung und -bewertung ist die entscheidende Brücke zwischen einer innovativen Idee und einer profitablen Investition, die es Organisationen ermöglicht, Risiken zu minimieren, bevor sie Kapital binden. Als Tutor für den praktischen Teil habe ich Teams bei der Strukturierung realer Investitionsprojekte betreut. Ich war verantwortlich für die Anleitung und Bewertung der umfassenden Entwicklung dieser Projekte, von Markt- und Technikstudien bis hin zur Finanzmodellierung von Cashflows und Sensitivitätsanalysen unter Verwendung von Microsoft Excel. Ich bewertete Workshops und Präsentationen von Geschäftsprofilen, die 50 % der Endnote ausmachten , und stellte sicher, dass die Vorschläge Kriterien der wirtschaftlichen Rentabilität, der technischen Machbarkeit sowie der sozialen und ökologischen Verantwortung integrierten. Diese Erfahrung hat meine Fähigkeit gestärkt, Geschäftschancen zu bewerten, Risiken zu managen und strategische Investitionsentscheidungen auf der Grundlage harter Daten zu fundieren."
     },
     en: {
+        // --- FECHAS DE EXPERIENCIA (Formato Corto) ---
+        "date_exp1": "Aug 2024 - Present", /* CHANGE HERE: When ended, change "Present" to the end date (e.g., "Dec 2025") */
+        "date_exp2": "Aug 2023 - Jul 2024",
+        "date_exp3": "Dec 2024 - Mar 2025",
+        "date_exp4": "Jan 2024 - Mar 2024",
+        "date_exp5": "Jan 2023 - Mar 2023",
+        "date_exp6": "Mar 2025 - Present", /* CHANGE HERE: When ended, change "Present" to the end date */
+        "date_exp7": "Mar 2025 - Present", /* CHANGE HERE: When ended, change "Present" to the end date */
+        
         "nav_about": "About Me",
         "nav_exp": "Experience",
         "nav_skills": "Skills",
