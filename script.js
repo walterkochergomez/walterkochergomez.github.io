@@ -72,13 +72,13 @@ window.addEventListener('scroll', () => {
 const translations = {
     es: {
         // --- FECHAS DE EXPERIENCIA (Formato Corto) ---
-        "date_exp1": "Ago 2024 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin (ej. "Dic 2025") */
+        "date_exp1": "Ago 2024 - Ago 2026", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin (ej. "Dic 2025") */
         "date_exp2": "Ago 2023 - Jul 2024",
         "date_exp3": "Dic 2024 - Mar 2025",
         "date_exp4": "Ene 2024 - Mar 2024",
         "date_exp5": "Ene 2023 - Mar 2023",
-        "date_exp6": "Mar 2025 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
-        "date_exp7": "Mar 2025 - Actual", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
+        "date_exp6": "Mar 2025 - Ago 2026", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
+        "date_exp7": "Mar 2025 - Ago 2026", /* CAMBIAR AQUÍ: Si finaliza esta actividad, cambia "Actual" por la fecha de fin */
         "date_exp8": "Ago 2026 - Actual", /* CAMBIAR AQUÍ: Si finalizas tu tesis, cambia "Actual" por el mes de fin (ej. "Dic 2026") */
        
         "exp_role8": "Trabajo de Título",
@@ -193,13 +193,13 @@ const translations = {
     },
     de: {
         // --- FECHAS DE EXPERIENCIA (Formato Corto) ---
-        "date_exp1": "Aug 2024 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum (z.B. "Dez 2025") */
+        "date_exp1": "Aug 2024 - Aug 2026", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum (z.B. "Dez 2025") */
         "date_exp2": "Aug 2023 - Jul 2024",
         "date_exp3": "Dez 2024 - Mär 2025",
         "date_exp4": "Jan 2024 - Mär 2024",
         "date_exp5": "Jan 2023 - Mär 2023",
-        "date_exp6": "Mär 2025 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
-        "date_exp7": "Mär 2025 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
+        "date_exp6": "Mär 2025 - Aug 2026", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
+        "date_exp7": "Mär 2025 - Aug 2026", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Datum */
         // ... debajo de tus otras fechas
         "date_exp8": "Aug 2026 - Heute", /* HIER ÄNDERN: Wenn beendet, ersetze "Heute" durch das Enddatum (z.B. "Dez 2026") */
         "exp_role8": "Abschlussarbeit (Thesis)",
@@ -314,13 +314,13 @@ const translations = {
     },
     en: {
         // --- FECHAS DE EXPERIENCIA (Formato Corto) ---
-        "date_exp1": "Aug 2024 - Present", /* CHANGE HERE: When ended, change "Present" to the end date (e.g., "Dec 2025") */
+        "date_exp1": "Aug 2024 - Aug 2026", /* CHANGE HERE: When ended, change "Present" to the end date (e.g., "Dec 2025") */
         "date_exp2": "Aug 2023 - Jul 2024",
         "date_exp3": "Dec 2024 - Mar 2025",
         "date_exp4": "Jan 2024 - Mar 2024",
         "date_exp5": "Jan 2023 - Mar 2023",
-        "date_exp6": "Mar 2025 - Present", /* CHANGE HERE: When ended, change "Present" to the end date */
-        "date_exp7": "Mar 2025 - Present", /* CHANGE HERE: When ended, change "Present" to the end date */
+        "date_exp6": "Mar 2025 - Aug 2026", /* CHANGE HERE: When ended, change "Present" to the end date */
+        "date_exp7": "Mar 2025 - Aug 2026", /* CHANGE HERE: When ended, change "Present" to the end date */
         // ... debajo de tus otras fechas
         "date_exp8": "Aug 2026 - Present", /* CHANGE HERE: When finished, change "Present" to the end date (e.g., "Dec 2026") */
         "exp_role8": "Final Degree Thesis",
