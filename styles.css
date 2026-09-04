@@ -467,8 +467,9 @@ h3::after {
 }
 
 .other-exp-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 .other-exp-card {
@@ -478,6 +479,8 @@ h3::after {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: var(--transition);
     border-top: 4px solid transparent;
+    flex: 0 1 calc(33.333% - 14px);
+    min-width: 250px;
 }
 .other-exp-card:hover {
     transform: translateY(-5px);
