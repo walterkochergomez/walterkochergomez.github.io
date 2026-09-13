@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Jürgen Köcher Gómez - Portafolio Interactivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="3600973.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">WK</div>
+            <ul class="nav-menu">
+                <li><a href="#sobre-mi" class="nav-link" data-key="nav_about">Sobre Mí</a></li>
+                <li><a href="#experiencia" class="nav-link" data-key="nav_exp">Experiencia</a></li>
+                <li><a href="#habilidades" class="nav-link" data-key="nav_skills">Habilidades</a></li>
+                <li><a href="#formacion" class="nav-link" data-key="nav_edu">Formación</a></li>
+                <li><a href="#certificaciones" class="nav-link" data-key="nav_cert">Certificaciones</a></li>
+                <li><a href="#otras-experiencias" class="nav-link" data-key="nav_other">Otras Experiencias</a></li>
+                <li><a href="#contacto" class="nav-link" data-key="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('es')" id="btn-es" class="lang-btn active">ES</button>
+                <button onclick="changeLanguage('de')" id="btn-de" class="lang-btn">DE</button>
+                <button onclick="changeLanguage('en')" id="btn-en" class="lang-btn">EN</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="header">
+        <div class="profile-img-container">
+            <img src="img/opcion2.JPG" alt="Walter Jürgen Köcher Gómez" class="profile-img">
+        </div>
+        <div class="header-info">
+            <h1>WALTER JÜRGEN<br>KÖCHER GÓMEZ</h1>
+            <h2 data-key="header_subtitle">ESTUDIANTE DE INGENIERÍA CIVIL INDUSTRIAL</h2>
+            <div class="contact-badges">
+                
+                <span class="contact-badge"><i class="fas fa-envelope"></i> w.kocher.gomez@gmail.com</span>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="sobre-mi">
+            <h3 data-key="about_title">Sobre Mí</h3>
+            <p data-key="about_text">Ingeniero Civil Industrial, con un fuerte enfoque en la optimización de procesos y el análisis de datos. Busco aplicar metodologías ágiles y soluciones tecnológicas para resolver problemas organizacionales complejos. Cuento con capacidad para trabajar en equipos multidisciplinarios y adaptarme a distintos entornos, con el objetivo actual de proyectar mi carrera a nivel internacional y aplicar mis conocimientos profesionales.</p>
+            <a href="curriculum_walter_kocher_es.pdf" id="cv-link" download class="download-btn">
+                <i class="fas fa-download"></i> <span data-key="btn_cv">Descargar CV en PDF</span>
+            </a>
+        </section>
+
+        <section id="experiencia">
+            <h3 data-key="exp_title">Experiencia Laboral</h3>
+            <div class="timeline">
+
+                <!-- Trabajo de Título müller co-ax gmbh -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">müller co-ax gmbh. Alemania</span>
+                        <span class="timeline-date" data-key="date_exp8">Ago 2026 - Actual</span>
+                    </div>
+                    <div class="timeline-role" data-key="exp_role8">Trabajo de Título</div>
+                    <ul>
+                        <li data-key="exp_desc8">Desarrollo de proyecto final de grado para la titulación.</li>
+                    </ul>
+                    <a href="exp-coax-tesis.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">Universidad de La Frontera</span>
+                        <span class="timeline-date" data-key="date_exp6">Mar 2025 - Actual</span>
+                    </div>
+                    <div class="timeline-role" data-key="exp_role6">Ayudante de Logística y Cadena de Suministros</div>
+                    <ul>
+                        <li data-key="exp_desc6">Desarrollo de Talleres y realización de clases prácticas</li>
+                    </ul>
+                    <a href="exp-ufro-logistica.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">Universidad de La Frontera</span>
+                        <span class="timeline-date" data-key="date_exp7">Mar 2025 - Actual</span>
+                    </div>
+                    <div class="timeline-role" data-key="exp_role7">Ayudante de Formulación y Evaluación de Proyectos</div>
+                    <ul>
+                        <li data-key="exp_desc7">Desarrollo de Talleres y realización de clases prácticas</li>
+                    </ul>
+                    <a href="exp-ufro-proyectos.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+    <span class="timeline-company">Universidad de La Frontera</span>
+    <span class="timeline-date" data-key="date_exp1">Ago 2024 - Actual</span>
+</div>
+                    <div class="timeline-role" data-key="exp_role1">Ayudante de Investigación y Operaciones</div>
+                    <ul>
+                        <li data-key="exp_desc1">Desarrollo de Talleres y realización de clases practicas</li>
+                    </ul>
+                    <a href="exp-ufro-inv.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+    <span class="timeline-company">CO-AX Válvulas S.L. Madrid</span>
+    <span class="timeline-date" data-key="date_exp3">Dic 2024 - Mar 2025</span>
+</div>
+                    <div class="timeline-role" data-key="exp_role3">Práctica de estudios</div>
+                    <ul>
+                        <li data-key="exp_desc3_1">Implementación de un banco de pruebas.</li>
+                    </ul>
+                    <a href="exp-coax-2024.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+    <span class="timeline-company">Universidad de La Frontera</span>
+    <span class="timeline-date" data-key="date_exp2">Ago 2023 - Jul 2024</span>
+</div>
+                    <div class="timeline-role" data-key="exp_role2">Ayudante de Termodinámica</div>
+                    <ul>
+                        <li data-key="exp_desc2">Desarrollo de material complementario</li>
+                    </ul>
+                    <a href="exp-ufro-termo.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+    <span class="timeline-company">CO-AX Válvulas S.L. Madrid</span>
+    <span class="timeline-date" data-key="date_exp4">Ene 2024 - Mar 2024</span>
+</div>
+                    <div class="timeline-role" data-key="exp_role4">Práctica de estudios</div>
+                    <ul>
+                        <li data-key="exp_desc4">Desarrollo de un banco de pruebas.</li>
+                    </ul>
+                    <a href="exp-coax-ene2024.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+    <span class="timeline-company">m-tech gmbh. Alemania</span>
+    <span class="timeline-date" data-key="date_exp5">Ene 2023 - Mar 2023</span>
+</div>
+                    <div class="timeline-role" data-key="exp_role5">Práctica de estudios</div>
+                    <ul>
+                        <li data-key="exp_desc5">Programación PLC de sistema semi-automático de llenado de gases.</li>
+                    </ul>
+                    <a href="exp-mtech.html" class="cert-link mt-2"><i class="fas fa-info-circle"></i> <span data-key="btn_more_info">Más información</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h3 data-key="skills_title">Habilidades Técnicas y Herramientas</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-key="skill1">Mejora Continua (Lean Six Sigma)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <span data-key="skill2">Análisis de Datos</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-microchip"></i>
+                    <span data-key="skill3">Automatización y PLC</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <span data-key="skill4">Programación (Java, Python)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cube"></i>
+                    <span data-key="skill5">Diseño 3D (Catia v5, SolidWorks)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-object-group"></i>
+                    <span data-key="skill6">Comunicación Visual (Adobe Photoshop)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <span data-key="skill7">Simulación (AnyLogic, Arena)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <span data-key="skill8">Gemelos Digitales (Digital Twins)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="idiomas">
+            <h3 data-key="lang_title">Idiomas</h3>
+            <div class="languages">
+                <div class="lang-item">
+                    <div class="lang-name" data-key="lang_es">Español</div>
+                    <div class="lang-bar-bg"><div class="lang-bar-fill" data-width="100%"></div></div>
+                    <div class="lang-level" data-key="lang_level_native">Nivel Nativo</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name" data-key="lang_de">Alemán</div>
+                    <div class="lang-bar-bg"><div class="lang-bar-fill" data-width="60%"></div></div> <div class="lang-level" data-key="lang_level_med">Nivel Medio</div> </div>
+                <div class="lang-item">
+                    <div class="lang-name" data-key="lang_en">Inglés</div>
+                    <div class="lang-bar-bg"><div class="lang-bar-fill" data-width="50%"></div></div>
+                    <div class="lang-level" data-key="lang_level_med">Nivel Medio</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion">
+            <h3 data-key="edu_title">Datos Académicos</h3>
+            <div class="academic-grid">
+                <!-- NUEVO BLOQUE: Ingeniería Civil Industrial -->
+                <div class="academic-item">
+                    <strong>Universidad de La Frontera</strong>
+                    <span data-key="edu_degree_industrial">Ingeniería Civil Industrial</span>
+                    <span data-key="status_current">(En curso)</span>
+                </div>
+                
+                <div class="academic-item">
+                    <strong>Universidad de La Frontera</strong>
+                    <span data-key="edu_minor">Minor en Análisis de Datos</span>
+                    <a href="certificados/Minor de analisis de datos.pdf" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                
+                <div class="academic-item">
+                    <strong>Universidad de La Frontera</strong>
+                    <span data-key="edu_degree">Licenciatura en Ciencias de la Ingeniería</span>
+                    <a href="certificados/grado_licenciatura_ufro.pdf" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="academic-item">
+                    <strong>Goethe-Institut</strong>
+                    <span>Zertifikat B1</span>
+                    <a href="certificados/aleman_b1_goethe.pdf" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="academic-item">
+                    <strong>Sprachschule AKTIV</strong>
+                    <span>Sprachkurs A1 & A2</span>
+                    <div class="cert-links-group">
+                        <a href="certificados/aleman_a1_aktiv.PNG" target="_blank" class="cert-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span> A1
+                        </a>
+                        <a href="certificados/aleman_a2_aktiv.PNG" target="_blank" class="cert-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span> A2
+                        </a>
+                    </div>
+                </div>
+                <div class="academic-item">
+                    <strong>INFORCAP LIMITADA</strong>
+                    <span>Full Stack Java Trainee</span>
+                    <a href="certificados/fullstack_java_inforcap.pdf" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificaciones">
+            <h3 data-key="cert_title">Certificaciones</h3>
+            <div class="other-exp-grid">
+                <div class="other-exp-card">
+                    <h4 data-key="cert1_name">SEO y content marketing</h4>
+                    <span class="cert-issuer">Santander Open Academy</span>
+                    <p data-key="cert1_desc">Fundamentos de SEO y creación de contenido para posicionar marcas y atraer audiencia digital.</p>
+                    <a href="certificados/santander_seo_content_marketing.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert2_name">Marketing automation</h4>
+                    <span class="cert-issuer">Santander Open Academy</span>
+                    <p data-key="cert2_desc">Automatización de procesos de marketing para optimizar campañas y la relación con clientes.</p>
+                    <a href="certificados/santander_marketing_automation.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert3_name">Introducción al comportamiento del consumidor</h4>
+                    <span class="cert-issuer">Santander Open Academy · Miami Herbert Business School</span>
+                    <p data-key="cert3_desc">Principios psicológicos y de mercado que explican las decisiones de compra de los consumidores.</p>
+                    <a href="certificados/santander_comportamiento_consumidor.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert4_name">Introducción a la Ciencia de Datos</h4>
+                    <span class="cert-issuer">Santander Open Academy · IE University</span>
+                    <p data-key="cert4_desc">Conceptos fundamentales de ciencia de datos: recolección, análisis y visualización de información.</p>
+                    <a href="certificados/santander_ciencia_datos.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert5_name">Google: IA Práctica para Marketing</h4>
+                    <span class="cert-issuer">Santander Open Academy · Google Gemini</span>
+                    <p data-key="cert5_desc">Aplicación práctica de inteligencia artificial generativa en estrategias de marketing.</p>
+                    <a href="certificados/santander_ia_marketing_gemini.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert6_name">Excel</h4>
+                    <span class="cert-issuer">Santander Open Academy</span>
+                    <p data-key="cert6_desc">Manejo intermedio de Microsoft Excel para el análisis y la organización de datos.</p>
+                    <a href="certificados/santander_excel.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert7_name">English Fundamentals: Collaborating for Team Success</h4>
+                    <span class="cert-issuer">Santander Open Academy · Penn ELP</span>
+                    <p data-key="cert7_desc">Vocabulario y habilidades de comunicación en inglés para el trabajo colaborativo en equipo.</p>
+                    <a href="certificados/santander_english_teamwork.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert8_name">Domina la IA con Gemini</h4>
+                    <span class="cert-issuer">Santander Open Academy · Google Gemini</span>
+                    <p data-key="cert8_desc">Uso práctico de Gemini como asistente de inteligencia artificial para el día a día.</p>
+                    <a href="certificados/santander_ia_gemini.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert9_name">Desarrollo y Crecimiento Profesional</h4>
+                    <span class="cert-issuer">Santander Open Academy · Harvard Business Impact</span>
+                    <p data-key="cert9_desc">Estrategias para la planificación de carrera y el desarrollo de habilidades profesionales.</p>
+                    <a href="certificados/santander_desarrollo_profesional.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert10_name">Elevating Your English: Communicating as a Leader</h4>
+                    <span class="cert-issuer">Santander Open Academy · Penn ELP</span>
+                    <p data-key="cert10_desc">Inglés avanzado orientado a la comunicación de liderazgo en entornos profesionales.</p>
+                    <a href="certificados/santander_english_leadership.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert11_name">Del propósito a la acción: Generando impacto en sostenibilidad</h4>
+                    <span class="cert-issuer">Santander Open Academy</span>
+                    <p data-key="cert11_desc">Herramientas para transformar objetivos de sostenibilidad en acciones concretas.</p>
+                    <a href="certificados/santander_sostenibilidad.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert12_name">AI and Responsibility: Creating a Positive AI</h4>
+                    <span class="cert-issuer">Santander Open Academy · IBM</span>
+                    <p data-key="cert12_desc">Principios de ética e inteligencia artificial responsable según IBM.</p>
+                    <a href="certificados/santander_ia_responsable_ibm.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert13_name">Power BI Intermedio: Análisis y modelado de datos</h4>
+                    <span class="cert-issuer">Santander Open Academy</span>
+                    <p data-key="cert13_desc">Análisis y modelado de datos con Power BI a nivel intermedio.</p>
+                    <a href="certificados/santander_powerbi_intermedio.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert14_name">Customer centricity y experiencia de cliente</h4>
+                    <span class="cert-issuer">Santander Open Academy · IE University</span>
+                    <p data-key="cert14_desc">Estrategia y transformación digital centrada en el cliente, orientada a líderes.</p>
+                    <a href="certificados/santander_customer_centricity.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert15_name">Gestión de Proyectos y Fundamentos de metodología Agile</h4>
+                    <span class="cert-issuer">Santander Open Academy</span>
+                    <p data-key="cert15_desc">Fundamentos de gestión de proyectos y metodologías ágiles.</p>
+                    <a href="certificados/santander_gestion_proyectos_agile.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert16_name">Product management: diseño y lanzamiento de productos digitales</h4>
+                    <span class="cert-issuer">Santander Open Academy</span>
+                    <p data-key="cert16_desc">Proceso de diseño, desarrollo y lanzamiento de productos digitales.</p>
+                    <a href="certificados/santander_product_management.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert17_name">Storytelling en el Marketing Digital</h4>
+                    <span class="cert-issuer">Santander Open Academy · The University of Chicago</span>
+                    <p data-key="cert17_desc">Técnicas de narrativa aplicadas al marketing digital para crear contenido memorable.</p>
+                    <a href="certificados/santander_storytelling_marketing.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4 data-key="cert18_name">Fundamentos de ciberseguridad</h4>
+                    <span class="cert-issuer">Santander Open Academy · IBM</span>
+                    <p data-key="cert18_desc">Conceptos esenciales de ciberseguridad para proteger información y sistemas digitales.</p>
+                    <a href="certificados/santander_ciberseguridad.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="otras-experiencias">
+            <h3 data-key="other_title">Otras Experiencias</h3>
+            <div class="other-exp-grid">
+                <div class="other-exp-card">
+                    <h4>CIG 2024 - Taller</h4>
+                    <p data-key="other_desc1">Participación en taller de optimización de rutas de despacho para vehículos de reparto.</p>
+                    <a href="certificados/taller_rutas_cig_2024.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4>CIG 2024 - Congreso</h4>
+                    <p data-key="other_desc_cig">Asistencia al Congreso de Ingeniería Global 2024.</p>
+                    <a href="certificados/asistencia_cig_2024.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4>CLEIN 2023</h4>
+                    <p data-key="other_desc2">Participación en Congreso Latinoamericano de Estudiantes e Ingenieros Industriales y Afines (México).</p>
+                    <a href="certificados/asistencia_clein_2023.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+                <div class="other-exp-card">
+                    <h4>Lean Six Sigma</h4>
+                    <p data-key="other_desc3">Participación en taller de Lean Six Sigma White Belt y Lean Six Sigma Yellow Belt.</p>
+                    <a href="certificados/taller_six_sigma.pdf" target="_blank" class="cert-link mt-2"><i class="fas fa-external-link-alt"></i> <span data-key="btn_cert">Ver Certificado</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h3 data-key="contact_title">Contacto</h3>
+            <div class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/xvzwydbq" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" data-placeholder-key="contact_name_ph" required>
+                    <input type="email" id="email" name="email" placeholder="Tu email" data-placeholder-key="contact_email_ph" required>
+                    <textarea id="message" name="message" placeholder="Tu mensaje" data-placeholder-key="contact_msg_ph" required></textarea>
+                    <button type="submit" data-key="contact_btn">Enviar Mensaje</button>
+                    <p id="form-status" style="display:none; text-align:center; margin-top:10px; color:var(--accent-color); font-weight:500;"></p>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://cl.linkedin.com/in/walter-j%C3%BCrgen-k%C3%B6cher-g%C3%B3mez" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Walter Jürgen Köcher Gómez. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
