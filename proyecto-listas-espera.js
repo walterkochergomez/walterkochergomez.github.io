@@ -60,7 +60,7 @@
             pj_tools_label: "Herramientas",
             pj_cta: "¿Conversamos sobre este proyecto?",
             // Textos usados solo por el gráfico
-            js_c0: "Colecistectomía", js_c1: "Hernia", js_c2: "Prótesis de rodilla", js_c3: "Pterigión",
+            js_c0: "Colecistectomía", js_c1: "Hernia abdominal", js_c2: "Prótesis de rodilla", js_c3: "Pterigión",
             js_ini: "En lista al inicio", js_pub: "Operados en hospital público", js_priv: "Derivados a clínica privada", js_fin: "En lista tras 12 semanas"
         },
         de: {
@@ -115,7 +115,7 @@
             pj_fig2: "Anwendung zur Erfassung der Patienten auf der Warteliste.",
             pj_tools_label: "Werkzeuge",
             pj_cta: "Sprechen wir über dieses Projekt?",
-            js_c0: "Cholezystektomie", js_c1: "Hernie", js_c2: "Knieprothese", js_c3: "Pterygium",
+            js_c0: "Cholezystektomie", js_c1: "Bauchwandhernie", js_c2: "Knieprothese", js_c3: "Pterygium",
             js_ini: "Zu Beginn auf der Liste", js_pub: "Im öffentlichen Krankenhaus operiert", js_priv: "An Privatklinik überwiesen", js_fin: "Nach 12 Wochen auf der Liste"
         },
         en: {
@@ -170,7 +170,7 @@
             pj_fig2: "App for registering patients on the waiting list.",
             pj_tools_label: "Tools",
             pj_cta: "Want to talk about this project?",
-            js_c0: "Cholecystectomy", js_c1: "Hernia", js_c2: "Knee replacement", js_c3: "Pterygium",
+            js_c0: "Cholecystectomy", js_c1: "Abdominal hernia", js_c2: "Knee replacement", js_c3: "Pterygium",
             js_ini: "On the list at the start", js_pub: "Operated in public hospital", js_priv: "Referred to private clinic", js_fin: "On the list after 12 weeks"
         }
     };
