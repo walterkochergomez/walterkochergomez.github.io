@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas de Espera Quirúrgicas - Walter Köcher</title>
-    <meta name="description" content="Modelo de optimización que planifica las cirugías de hospitales públicos de La Araucanía para reducir la lista de espera, dando prioridad a quienes más lo necesitan.">
+    <meta name="description" content="Modelo de optimización estocástica que planifica las cirugías de hospitales públicos de La Araucanía para reducir la lista de espera, dando prioridad a quienes más lo necesitan.">
 
     <!-- Vista previa al compartir el enlace (LinkedIn, WhatsApp, etc.) -->
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Walter Jürgen Köcher Gómez">
-    <meta property="og:title" content="Optimización de listas de espera quirúrgicas">
-    <meta property="og:description" content="Un modelo que planifica las cirugías de hospitales públicos de La Araucanía para reducir la espera, dando prioridad a quienes más lo necesitan y sin dejar a ningún grupo atrás.">
+    <meta property="og:title" content="Optimización estocástica de listas de espera quirúrgicas">
+    <meta property="og:description" content="Un modelo de optimización estocástica que planifica las cirugías de hospitales públicos de La Araucanía para reducir la espera, dando prioridad a quienes más lo necesitan y sin dejar a ningún grupo atrás.">
     <meta property="og:image" content="https://walterkochergomez.github.io/img/proyecto-listas-espera-og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="627">
@@ -46,18 +46,18 @@
 
         <!-- ENCABEZADO -->
         <section class="detail-section">
-            <h3 data-key="pj_title">Optimización de listas de espera quirúrgicas</h3>
+            <h3 data-key="pj_title">Optimización estocástica de listas de espera quirúrgicas</h3>
             <div class="timeline-item" style="max-width: 100%;">
                 <div class="timeline-header">
                     <span class="timeline-company" data-key="pj_place">Universidad de La Frontera (Temuco, Chile)</span>
                     <span class="timeline-date" data-key="pj_date">Abr – Jul 2026</span>
                 </div>
                 <h4 class="pj-sub" data-key="pj_subtitle">Un modelo para decidir quién se opera, dónde y cuándo</h4>
-                <p class="pj-text" data-key="pj_intro">En la red pública de La Araucanía, casi 4.000 personas esperaban una cirugía en solo cuatro especialidades. Desarrollé un modelo de optimización que planifica semana a semana las cirugías de tres hospitales públicos y decide qué pacientes conviene derivar a una clínica privada, con un objetivo claro: reducir la espera dando prioridad a quienes más lo necesitan, sin dejar a ningún grupo atrás.</p>
+                <p class="pj-text" data-key="pj_intro">En la red pública de La Araucanía, casi 4.000 personas esperaban una cirugía en solo cuatro especialidades. Desarrollé un modelo de optimización estocástica que planifica semana a semana las cirugías de tres hospitales públicos y decide qué pacientes conviene derivar a una clínica privada, con un objetivo claro: reducir la espera dando prioridad a quienes más lo necesitan, sin dejar a ningún grupo atrás.</p>
                 <div class="tag-list" style="margin-top: 18px;">
                     <span class="tag">Python</span>
                     <span class="tag">IBM CPLEX</span>
-                    <span class="tag" data-key="pj_tag1">Optimización</span>
+                    <span class="tag" data-key="pj_tag1">Optimización estocástica</span>
                     <span class="tag" data-key="pj_tag2">Análisis de datos</span>
                     <span class="tag" data-key="pj_tag3">Salud pública</span>
                 </div>
@@ -98,7 +98,7 @@
         <section class="detail-section">
             <div class="timeline-item" style="max-width: 100%;">
                 <h4 class="pj-sub pj-sub-first"><i class="fas fa-lightbulb"></i> <span data-key="pj_s2_title">La solución</span></h4>
-                <p class="pj-text" data-key="pj_s2_p1">Construí un modelo de optimización: un programa que evalúa miles de combinaciones posibles y elige el mejor plan de cirugías. Para cuatro tipos de cirugía y tres hospitales, el modelo busca equilibrar tres metas al mismo tiempo:</p>
+                <p class="pj-text" data-key="pj_s2_p1">Construí un modelo de optimización estocástica: un programa que evalúa miles de combinaciones posibles y elige el mejor plan de cirugías. Para cuatro tipos de cirugía y tres hospitales, el modelo busca equilibrar tres metas al mismo tiempo:</p>
                 <div class="pj-cards">
                     <div class="pj-card">
                         <h5><i class="fas fa-coins"></i><span data-key="pj_g1_t">Gastar mejor</span></h5>
@@ -113,7 +113,7 @@
                         <p data-key="pj_g3_d">Que ningún grupo de pacientes quede sistemáticamente atrás.</p>
                     </div>
                 </div>
-                <p class="pj-text" data-key="pj_s2_p2">Como en la realidad la demanda y las inasistencias cambian, el plan se pone a prueba en un escenario pesimista, uno normal y uno optimista, para que funcione en cualquiera de ellos.</p>
+                <p class="pj-text" data-key="pj_s2_p2">Es estocástico porque considera la incertidumbre: la demanda, las inasistencias y la duración de las cirugías cambian, así que el plan se pone a prueba en un escenario pesimista, uno normal y uno optimista, para que funcione en cualquiera de ellos.</p>
             </div>
         </section>
 
@@ -161,7 +161,7 @@
                 <h4 class="pj-sub pj-sub-first"><i class="fas fa-user-gear"></i> <span data-key="pj_s4_title">Lo que desarrollé</span></h4>
                 <p class="pj-text" data-key="pj_s4_p1">Desarrollé el proyecto completo, desde la idea hasta herramientas listas para usarse:</p>
                 <ul class="pj-done">
-                    <li data-key="pj_s4_l1">Diseñé el modelo matemático y lo programé en Python con IBM CPLEX, un optimizador usado en la industria.</li>
+                    <li data-key="pj_s4_l1">Diseñé el modelo de optimización estocástica y lo programé en Python con IBM CPLEX, un optimizador usado en la industria.</li>
                     <li data-key="pj_s4_l2">Preparé los datos a partir de información histórica de listas de espera de la región.</li>
                     <li data-key="pj_s4_l3">Comparé distintos escenarios y prioridades para entender qué se gana y qué se pierde en cada caso.</li>
                     <li data-key="pj_s4_l4">Creé una aplicación web para registrar pacientes y un panel para seguir los resultados.</li>
