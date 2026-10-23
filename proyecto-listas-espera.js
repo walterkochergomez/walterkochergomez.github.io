@@ -58,9 +58,6 @@
             pj_fig1: "Panel de planificación con los resultados principales.",
             pj_fig2: "Aplicación para registrar a los pacientes en lista de espera.",
             pj_tools_label: "Herramientas",
-            pj_course_label: "Curso",
-            pj_course: "Taller de Modelado y Toma de Decisiones, Ingeniería Civil Industrial UFRO",
-            pj_team_label: "Grupo del curso",
             pj_cta: "¿Conversamos sobre este proyecto?",
             // Textos usados solo por el gráfico
             js_c0: "Colecistectomía", js_c1: "Hernia", js_c2: "Prótesis de rodilla", js_c3: "Pterigión",
@@ -117,9 +114,6 @@
             pj_fig1: "Planungs-Dashboard mit den wichtigsten Ergebnissen.",
             pj_fig2: "Anwendung zur Erfassung der Patienten auf der Warteliste.",
             pj_tools_label: "Werkzeuge",
-            pj_course_label: "Kurs",
-            pj_course: "Workshop Modellierung und Entscheidungsfindung, Wirtschaftsingenieurwesen UFRO",
-            pj_team_label: "Kursgruppe",
             pj_cta: "Sprechen wir über dieses Projekt?",
             js_c0: "Cholezystektomie", js_c1: "Hernie", js_c2: "Knieprothese", js_c3: "Pterygium",
             js_ini: "Zu Beginn auf der Liste", js_pub: "Im öffentlichen Krankenhaus operiert", js_priv: "An Privatklinik überwiesen", js_fin: "Nach 12 Wochen auf der Liste"
@@ -175,9 +169,6 @@
             pj_fig1: "Planning dashboard with the main results.",
             pj_fig2: "App for registering patients on the waiting list.",
             pj_tools_label: "Tools",
-            pj_course_label: "Course",
-            pj_course: "Modeling and Decision-Making Workshop, Industrial Engineering, UFRO",
-            pj_team_label: "Course group",
             pj_cta: "Want to talk about this project?",
             js_c0: "Cholecystectomy", js_c1: "Hernia", js_c2: "Knee replacement", js_c3: "Pterygium",
             js_ini: "On the list at the start", js_pub: "Operated in public hospital", js_priv: "Referred to private clinic", js_fin: "On the list after 12 weeks"
