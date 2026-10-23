@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Espera Quirúrgicas - Walter Köcher</title>
+    <meta name="description" content="Modelo MILP estocástico de dos etapas y multiobjetivo para planificar pabellón y derivación al sector privado en la red pública de La Araucanía, equilibrando costo, espera y equidad.">
+
+    <!-- Vista previa al compartir el enlace (LinkedIn, WhatsApp, etc.) -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Walter Jürgen Köcher Gómez">
+    <meta property="og:title" content="Optimización estocástica de listas de espera quirúrgicas">
+    <meta property="og:description" content="MILP estocástico de dos etapas en Python + CPLEX: 708 cirugías agendadas en 12 semanas, 105 políticas en la frontera de Pareto y la equidad como criterio explícito del modelo.">
+    <meta property="og:image" content="https://walterkochergomez.github.io/img/proyecto-listas-espera-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    <meta property="og:url" content="https://walterkochergomez.github.io/proyecto-listas-espera.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="3600973.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" style="background: rgba(217, 224, 229, 0.98); box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="nav-container">
+            <div class="nav-logo" style="display: block;">WK</div>
+            <ul class="nav-menu" style="margin-right: auto; margin-left: 0;">
+                <li><a href="index.html#proyectos" class="nav-link"><i class="fas fa-arrow-left"></i> <span data-key="nav_back">Volver al Portafolio</span></a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('es')" id="btn-es" class="lang-btn active">ES</button>
+                <button onclick="changeLanguage('de')" id="btn-de" class="lang-btn">DE</button>
+                <button onclick="changeLanguage('en')" id="btn-en" class="lang-btn">EN</button>
+            </div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pj-page" style="margin-top: 100px;">
+
+        <!-- ENCABEZADO -->
+        <section class="detail-section">
+            <h3 data-key="pj_title">Optimización estocástica de listas de espera quirúrgicas</h3>
+            <div class="pj-hero">
+                <span class="project-kicker" data-key="pj_kicker">Investigación de Operaciones · Salud pública · Chile</span>
+                <p class="pj-lead" style="margin-top: 10px;" data-key="pj_lead">Un modelo de optimización que no solo decide cuántos pacientes se operan, sino quiénes: planifica la agenda de pabellón y la derivación al sector privado bajo incertidumbre, con la equidad incorporada como criterio explícito del modelo.</p>
+                <div class="pj-meta">
+                    <span><i class="fas fa-university"></i>Universidad de La Frontera</span>
+                    <span><i class="fas fa-chalkboard-teacher"></i><span data-key="pj_course">Taller de Modelado y Toma de Decisiones</span></span>
+                    <span><i class="far fa-calendar"></i><span data-key="pj_date">Abr – Jul 2026</span></span>
+                    <span><i class="fas fa-users"></i><span data-key="pj_team_size">Proyecto de curso · grupo de 4</span></span>
+                </div>
+                <div class="pj-role">
+                    <i class="fas fa-user-cog"></i>
+                    <p><strong data-key="pj_role_label">Mi rol:</strong> <span data-key="pj_role">desarrollé el proyecto de principio a fin: formulación matemática, implementación en Python + CPLEX, análisis de Pareto, app de ingreso de pacientes y dashboard de planificación.</span></p>
+                </div>
+                <div class="tag-list">
+                    <span class="tag">Python</span>
+                    <span class="tag">DOcplex · IBM CPLEX</span>
+                    <span class="tag">pandas</span>
+                    <span class="tag" data-key="tag_stoch_milp">MILP estocástico</span>
+                    <span class="tag" data-key="tag_multiobj">Optimización multiobjetivo</span>
+                    <span class="tag" data-key="pj_tag_pareto">Frontera de Pareto</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CIFRAS CLAVE -->
+        <section class="detail-section">
+            <div class="pj-stats">
+                <div class="pj-stat"><strong data-num="3866">3.866</strong><span data-key="pj_stat1">pacientes en lista de espera inicial</span></div>
+                <div class="pj-stat"><strong data-num="708">708</strong><span data-key="pj_stat2">cirugías agendadas en 12 semanas, 128 vía privado</span></div>
+                <div class="pj-stat"><strong data-num="0.15" data-fmt="pct0">15 %</strong><span data-key="pj_stat3">menos pacientes en lista tras 12 semanas</span></div>
+                <div class="pj-stat"><strong data-num="36433">36.433</strong><span data-key="pj_stat4">variables de decisión en 576 subgrupos</span></div>
+            </div>
+        </section>
+
+        <!-- 01 EL PROBLEMA -->
+        <section class="detail-section">
+            <div class="pj-block">
+                <h4><span class="pj-num">01</span><span data-key="pj_s1_title">El problema</span></h4>
+                <p data-key="pj_s1_p1">En la red pública chilena, el tiempo que un paciente espera una cirugía depende de la capacidad de pabellón, del presupuesto para derivar al sector privado y de las reglas de priorización. Optimizar solo el número total de cirugías puede esconder a grupos que quedan sistemáticamente postergados.</p>
+                <div class="pj-cards">
+                    <div class="pj-card">
+                        <h5><i class="fas fa-map-marker-alt"></i><span data-key="pj_gap1_t">Brecha territorial</span></h5>
+                        <p data-key="pj_gap1_d">Hospitales con capacidad de pabellón desigual y bajo presión sostenida.</p>
+                    </div>
+                    <div class="pj-card">
+                        <h5><i class="fas fa-balance-scale"></i><span data-key="pj_gap2_t">Brecha social y clínica</span></h5>
+                        <p data-key="pj_gap2_d">Un caso grave de un grupo vulnerable puede esperar lo mismo que un caso leve.</p>
+                    </div>
+                    <div class="pj-card">
+                        <h5><i class="fas fa-hand-holding-usd"></i><span data-key="pj_gap3_t">Derivación acotada</span></h5>
+                        <p data-key="pj_gap3_d">El presupuesto para el sector privado es limitado: cada peso debe asignarse con criterio.</p>
+                    </div>
+                </div>
+                <p data-key="pj_s1_p2">El proyecto modela tres hospitales públicos de La Araucanía (Hospital Dr. Hernán Henríquez Aravena, Hospital Intercultural de Nueva Imperial y Complejo Asistencial Padre Las Casas) más un prestador privado, para cuatro cirugías trazadoras: colecistectomía, hernia, endoprótesis de rodilla y pterigión.</p>
+            </div>
+        </section>
+
+        <!-- 02 EL MODELO -->
+        <section class="detail-section">
+            <div class="pj-block">
+                <h4><span class="pj-num">02</span><span data-key="pj_s2_title">El modelo</span></h4>
+                <p data-key="pj_s2_p1">Se formuló un programa lineal entero mixto (MILP) estocástico de dos etapas y multiobjetivo. Cada paciente se sigue dentro de un subgrupo definido por hospital, tipo de cirugía, perfil socioeconómico (FONASA A–B, C, D y SENAME), gravedad clínica y rango etario: 576 subgrupos seguidos semana a semana durante 12 semanas.</p>
+                <div class="pj-cards">
+                    <div class="pj-card">
+                        <h5><span class="pj-z">Z₁</span><span data-key="pj_z1_t">Costo económico</span></h5>
+                        <p data-key="pj_z1_d">Gasto esperado en derivaciones privadas y horas extra de pabellón.</p>
+                    </div>
+                    <div class="pj-card">
+                        <h5><span class="pj-z">Z₂</span><span data-key="pj_z2_t">Espera ponderada</span></h5>
+                        <p data-key="pj_z2_d">Tiempo en lista ponderado por prioridad social y gravedad clínica, más una penalización por incumplir las metas COMGES.</p>
+                    </div>
+                    <div class="pj-card">
+                        <h5><span class="pj-z">Z₃</span><span data-key="pj_z3_t">Inequidad (minimax)</span></h5>
+                        <p data-key="pj_z3_d">La peor fracción de demanda no resuelta entre todos los subgrupos: protege al grupo más rezagado.</p>
+                    </div>
+                </div>
+
+                <div class="pj-flow" aria-label="Estructura estocástica de dos etapas">
+                    <div class="pj-flow-step">
+                        <h5 data-key="pj_flow1_t">1ª etapa · aquí y ahora</h5>
+                        <p data-key="pj_flow1_d">Agenda quirúrgica y derivaciones: una sola agenda, válida para cualquier escenario.</p>
+                    </div>
+                    <div class="pj-flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="pj-flow-step is-scen">
+                        <h5 data-key="pj_flow2_t">Tres escenarios</h5>
+                        <div class="pj-scen-list">
+                            <div class="pj-scen"><b data-key="pj_sc1">Pesimista</b><span data-num="0.25" data-fmt="pct0">25 %</span></div>
+                            <div class="pj-scen"><b data-key="pj_sc2">Central</b><span data-num="0.5" data-fmt="pct0">50 %</span></div>
+                            <div class="pj-scen"><b data-key="pj_sc3">Optimista</b><span data-num="0.25" data-fmt="pct0">25 %</span></div>
+                        </div>
+                        <p data-key="pj_flow2_d">Demanda, inasistencias y duración quirúrgica inciertas.</p>
+                    </div>
+                    <div class="pj-flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="pj-flow-step">
+                        <h5 data-key="pj_flow3_t">2ª etapa · recurso</h5>
+                        <p data-key="pj_flow3_d">Horas extra, evolución de la lista y brechas de metas, según el escenario que ocurra.</p>
+                    </div>
+                </div>
+
+                <p data-key="pj_s2_p2">Los tres objetivos se normalizan y se combinan con pesos, y siete restricciones aseguran que la solución sea operable: conservación de flujo de la lista, capacidad de pabellón, presupuesto de derivación, equidad minimax, tope legal de horas extra, capacidad del privado y metas COMGES como restricción blanda.</p>
+            </div>
+        </section>
+
+        <!-- 03 RESULTADOS -->
+        <section class="detail-section">
+            <div class="pj-block">
+                <h4><span class="pj-num">03</span><span data-key="pj_s3_title">Resultados</span></h4>
+                <p data-key="pj_s3_p1">En la corrida principal, con prioridad deliberada a reducir la espera (pesos 0,05 / 0,80 / 0,15), el modelo agenda 708 cirugías en 12 semanas, 128 de ellas derivadas al privado (≈18 %). La lista total baja de 3.866 a 3.287 pacientes, con un costo financiero de 57,2 millones de pesos chilenos y un índice de inequidad U = 1,045.</p>
+
+                <div class="pj-chart-title" data-key="pj_chart1_title">Reducción de la lista de espera a 12 semanas, por cirugía</div>
+                <div class="pj-chart" id="pj-bars-chart">
+                    <div class="pj-bars" id="pj-bars"></div>
+                    <div class="pj-tooltip" id="pj-bars-tip" role="status"></div>
+                </div>
+
+                <p style="margin-top: 22px;" data-key="pj_s3_p2">El pterigión, la cirugía más corta, reduce su lista a la mitad; la endoprótesis de rodilla apenas baja por su larga duración en pabellón y la capacidad privada limitada.</p>
+
+                <div class="pj-chart-title" data-key="pj_fifo_title">Frente a la atención por orden de llegada (FIFO)</div>
+                <div class="pj-compare">
+                    <div class="pj-card">
+                        <h5><i class="fas fa-list-ol"></i><span data-key="pj_fifo_a_t">Política FIFO</span></h5>
+                        <ul class="pj-list">
+                            <li data-key="pj_fifo_a1">Atiende por orden de llegada o antigüedad.</li>
+                            <li data-key="pj_fifo_a2">No pondera prioridad social ni gravedad clínica.</li>
+                            <li data-key="pj_fifo_a3">No optimiza el costo ni controla la inequidad.</li>
+                            <li data-key="pj_fifo_a4">La derivación no se liga al presupuesto.</li>
+                        </ul>
+                    </div>
+                    <div class="pj-card is-accent">
+                        <h5><i class="fas fa-check-circle"></i><span data-key="pj_fifo_b_t">Modelo propuesto</span></h5>
+                        <ul class="pj-list">
+                            <li data-key="pj_fifo_b1">Prioriza por perfil social y gravedad clínica.</li>
+                            <li data-key="pj_fifo_b2">Respeta las metas COMGES por tipo de cirugía.</li>
+                            <li data-key="pj_fifo_b3">Deriva al privado bajo un tope presupuestario.</li>
+                            <li data-key="pj_fifo_b4">Minimiza la inequidad de acceso.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 FRONTERA DE PARETO -->
+        <section class="detail-section">
+            <div class="pj-block">
+                <h4><span class="pj-num">04</span><span data-key="pj_s4_title">Análisis de compromisos</span></h4>
+                <p data-key="pj_s4_p1">No existe una única solución óptima, sino una frontera de compromisos. El modelo se resolvió 105 veces recorriendo todas las combinaciones de pesos entre costo, espera y equidad. Cada punto es una política de gestión distinta; pasa el cursor sobre ellos para ver el detalle.</p>
+
+                <div class="pj-chart-title" data-key="pj_chart2_title">Frontera de Pareto: costo financiero vs. costo social de la espera</div>
+                <div class="pj-legend">
+                    <span><i class="pj-dot" style="background:#199e70"></i><span data-key="pj_lg1">Inequidad mínima (U ≈ 1,00)</span></span>
+                    <span><i class="pj-dot" style="background:#2a78d6"></i><span data-key="pj_lg2">Inequidad intermedia (U 1,01–1,10)</span></span>
+                    <span><i class="pj-dot" style="background:#eb6834"></i><span data-key="pj_lg3">Sin peso de equidad (U = 2,00)</span></span>
+                    <span><i class="pj-dot is-chosen"></i><span data-key="pj_lg4">Política elegida</span></span>
+                </div>
+                <div class="pj-axis-y" data-key="pj_axis_y">↑ Costo social de la espera (miles de millones CLP)</div>
+                <div class="pj-chart" id="pj-pareto-chart">
+                    <svg id="pj-pareto" viewBox="0 0 640 340" role="img" aria-label="Diagrama de dispersión de 105 políticas evaluadas"></svg>
+                    <div class="pj-tooltip" id="pj-pareto-tip" role="status"></div>
+                </div>
+                <div class="pj-axis-x" data-key="pj_axis_x">Costo financiero (millones CLP) →</div>
+
+                <div class="pj-table-wrap">
+                    <table class="pj-table" id="pj-policy-table">
+                        <thead>
+                            <tr>
+                                <th data-key="pj_th1">Política (pesos w₁ ; w₂ ; w₃)</th>
+                                <th data-key="pj_th2">Costo financiero</th>
+                                <th data-key="pj_th3">Costo social de espera</th>
+                                <th data-key="pj_th4">Inequidad U</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <p data-key="pj_s4_p2">La política elegida logra casi la misma reducción de espera que la política pura de espera, gasta menos y mantiene la inequidad cerca de su mínimo. Sin peso de equidad, la inequidad se duplica: el 15 % asignado a la equidad compra casi toda esa protección a un costo marginal.</p>
+            </div>
+        </section>
+
+        <!-- 05 DEL ÓPTIMO AL PACIENTE -->
+        <section class="detail-section">
+            <div class="pj-block">
+                <h4><span class="pj-num">05</span><span data-key="pj_s5_title">Del modelo a la operación</span></h4>
+                <p data-key="pj_s5_p1">El optimizador trabaja con subgrupos, no con personas. Para que el resultado sea utilizable, el modelo se acompaña de un flujo completo, desde el ingreso de pacientes hasta el seguimiento de resultados:</p>
+                <div class="pj-steps">
+                    <div class="pj-step">
+                        <span class="pj-step-n">1</span>
+                        <h5 data-key="pj_st1_t">Ingreso de pacientes</h5>
+                        <p data-key="pj_st1_d">Aplicación web que registra la lista de espera, valida el RUT y genera el Excel que alimenta el modelo.</p>
+                    </div>
+                    <div class="pj-step">
+                        <span class="pj-step-n">2</span>
+                        <h5 data-key="pj_st2_t">Agenda por paciente</h5>
+                        <p data-key="pj_st2_d">Resuelto el modelo, los cupos de cada subgrupo se asignan por antigüedad en lista y se reparten en días hábiles según las horas de pabellón.</p>
+                    </div>
+                    <div class="pj-step">
+                        <span class="pj-step-n">3</span>
+                        <h5 data-key="pj_st3_t">Dashboard de planificación</h5>
+                        <p data-key="pj_st3_d">Tablero con lista inicial y final, reducción, cirugías, inequidad y costo, filtrable por cirugía y hospital.</p>
+                    </div>
+                </div>
+                <div class="pj-shots">
+                    <figure>
+                        <img src="img/proyecto-le-dashboard.jpg" alt="Indicadores del dashboard de planificación quirúrgica" class="gallery-img-full" loading="lazy">
+                        <figcaption data-key="pj_fig1">Dashboard de planificación: indicadores de la corrida principal.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/proyecto-le-ingreso.jpg" alt="Aplicación web de ingreso de pacientes" class="gallery-img-full" loading="lazy">
+                        <figcaption data-key="pj_fig2">Aplicación de ingreso de pacientes que genera el Excel del modelo.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 HERRAMIENTAS Y EQUIPO -->
+        <section class="detail-section">
+            <div class="pj-block">
+                <h4><span class="pj-num">06</span><span data-key="pj_s6_title">Herramientas y equipo</span></h4>
+                <dl class="pj-facts">
+                    <dt data-key="pj_tools_label">Herramientas</dt>
+                    <dd>Python · DOcplex / IBM CPLEX · JupyterLab · pandas · Excel · HTML/JS</dd>
+                    <dt data-key="pj_sources_label">Datos</dt>
+                    <dd data-key="pj_sources">Instancia basada en datos históricos de listas de espera (Control de Gestión Araucanía Sur). Las llegadas semanales se estimaron como la incidencia anual regional dividida en 52 semanas.</dd>
+                    <dt data-key="pj_team_label">Grupo del curso</dt>
+                    <dd>Walter Köcher · Pamela von Johnn · Diego Jimenez · Anajosefa Inostroza</dd>
+                    <dt data-key="pj_next_label">Recomendaciones</dt>
+                    <dd data-key="pj_next">Trabajar con más y mejores datos, implementar la metodología de forma gradual y actualizar periódicamente costos, capacidades y metas COMGES.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="detail-section pj-cta">
+            <a href="index.html#contacto" class="btn-primary"><i class="fas fa-envelope"></i> <span data-key="pj_cta">¿Conversamos sobre este proyecto?</span></a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Walter Jürgen Köcher Gómez. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="proyecto-listas-espera.js"></script>
+</body>
+</html>

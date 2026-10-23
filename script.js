@@ -28,7 +28,7 @@ const fadeInObserver = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.1 });
 
 // Seleccionar elementos para animar
-document.querySelectorAll('h3, #sobre-mi p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .contact-form form, .detail-section').forEach(el => {
+document.querySelectorAll('h3, #sobre-mi p, .timeline-item, .skill-card, .lang-item, .academic-item, .other-exp-card, .project-feature, .contact-form form, .detail-section').forEach(el => {
     fadeInObserver.observe(el);
 });
 
@@ -96,6 +96,21 @@ const translations = {
         "nav_cert": "Certificaciones",
         "nav_other": "Otras Experiencias",
         "nav_contact": "Contacto",
+        // --- PROYECTOS (tarjeta en el índice) ---
+        "nav_projects": "Proyectos",
+        "proj_title": "Proyectos",
+        "proj1_visual": "Frontera de Pareto · 105 políticas",
+        "proj1_kicker": "Investigación de Operaciones · Salud pública",
+        "proj1_name": "Optimización estocástica de listas de espera quirúrgicas",
+        "proj1_meta": "UFRO · Taller de Modelado y Toma de Decisiones · 2026",
+        "proj1_desc": "Modelo MILP estocástico de dos etapas que decide cuántas cirugías programar en cada hospital público y cuántos pacientes derivar al sector privado, equilibrando costo, tiempo de espera y equidad en la red pública de La Araucanía.",
+        "proj1_kpi1_v": "3.866",
+        "proj1_kpi1": "pacientes en lista",
+        "proj1_kpi2": "cirugías agendadas en 12 semanas",
+        "proj1_kpi3": "políticas evaluadas",
+        "tag_stoch_milp": "MILP estocástico",
+        "tag_multiobj": "Optimización multiobjetivo",
+        "btn_view_project": "Ver proyecto",
         "header_subtitle": "ESTUDIANTE DE INGENIERÍA CIVIL INDUSTRIAL",
         "about_title": "Sobre Mí",
         "about_text": "Ingeniero Civil Industrial, con un fuerte enfoque en la optimización de procesos y el análisis de datos. Busco aplicar metodologías ágiles y soluciones tecnológicas para resolver problemas organizacionales complejos. Cuento con capacidad para trabajar en equipos multidisciplinarios y adaptarme a distintos entornos, con el objetivo actual de proyectar mi carrera a nivel internacional y aplicar mis conocimientos profesionales.",
@@ -258,6 +273,21 @@ const translations = {
         "nav_cert": "Zertifizierungen",
         "nav_other": "Weitere Erfahrungen",
         "nav_contact": "Kontakt",
+        // --- PROJEKTE ---
+        "nav_projects": "Projekte",
+        "proj_title": "Projekte",
+        "proj1_visual": "Pareto-Front · 105 Strategien",
+        "proj1_kicker": "Operations Research · Öffentliche Gesundheit",
+        "proj1_name": "Stochastische Optimierung von OP-Wartelisten",
+        "proj1_meta": "UFRO · Workshop Modellierung und Entscheidungsfindung · 2026",
+        "proj1_desc": "Zweistufiges stochastisches MILP-Modell, das festlegt, wie viele Operationen in jedem öffentlichen Krankenhaus geplant und wie viele Patienten an private Anbieter überwiesen werden – mit einem Gleichgewicht aus Kosten, Wartezeit und Gerechtigkeit im öffentlichen Gesundheitsnetz der Region Araucanía (Chile).",
+        "proj1_kpi1_v": "3.866",
+        "proj1_kpi1": "Patienten auf der Warteliste",
+        "proj1_kpi2": "geplante Operationen in 12 Wochen",
+        "proj1_kpi3": "bewertete Strategien",
+        "tag_stoch_milp": "Stochastisches MILP",
+        "tag_multiobj": "Mehrzieloptimierung",
+        "btn_view_project": "Projekt ansehen",
         "header_subtitle": "STUDENT DER WIRTSCHAFTSINGENIEURWESEN",
         "about_title": "Über mich",
         "about_text": "Wirtschaftsingenieur mit starkem Fokus auf Prozessoptimierung und Datenanalyse. Ich setze agile Methoden und technologische Lösungen ein, um komplexe organisatorische Herausforderungen zu bewältigen. Ich bin teamfähig, arbeite gerne in interdisziplinären Umgebungen und passe mich schnell an. Mein aktuelles Ziel ist es, meine Karriere international auszurichten und meine Fachkenntnisse gezielt einzubringen.",
@@ -420,6 +450,21 @@ const translations = {
         "nav_cert": "Certifications",
         "nav_other": "Other Experiences",
         "nav_contact": "Contact",
+        // --- PROJECTS ---
+        "nav_projects": "Projects",
+        "proj_title": "Projects",
+        "proj1_visual": "Pareto front · 105 policies",
+        "proj1_kicker": "Operations Research · Public Health",
+        "proj1_name": "Stochastic Optimization of Surgical Waiting Lists",
+        "proj1_meta": "UFRO · Modeling and Decision-Making Workshop · 2026",
+        "proj1_desc": "Two-stage stochastic MILP model that decides how many surgeries to schedule at each public hospital and how many patients to refer to private providers, balancing cost, waiting time and equity across the public health network of La Araucanía, Chile.",
+        "proj1_kpi1_v": "3,866",
+        "proj1_kpi1": "patients on the waiting list",
+        "proj1_kpi2": "surgeries scheduled in 12 weeks",
+        "proj1_kpi3": "policies evaluated",
+        "tag_stoch_milp": "Stochastic MILP",
+        "tag_multiobj": "Multi-objective optimization",
+        "btn_view_project": "View project",
         "header_subtitle": "INDUSTRIAL CIVIL ENGINEERING STUDENT",
         "about_title": "About Me",
         "about_text": "Industrial Civil Engineer with a strong focus on process optimization and data analysis. I seek to apply agile methodologies and technological solutions to solve complex organizational problems. I have the ability to work in multidisciplinary teams and adapt to different environments, with the current goal of projecting my career internationally and applying my professional knowledge.",
